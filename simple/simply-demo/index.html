@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style type="text/css">
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .main{
+        width: 60%;
+        margin: 0 auto;
+    }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div data-sr="move 200px, over 1.5s, enter left"><img src="images/groupPho01.png" alt=""> </div>
+    <!--<div data-sr="enter left over 1s and move 140px"><img src="images/groupPho02.png" alt=""></div>-->
+    <!--<div data-sr="enter right over 1s and move 140px"> <img src="images/groupPho03.png" alt=""> </div>-->
+    <!--<div data-sr="enter bottom over 1s and move 140px"> <img src="images/groupPho04.png" alt=""> </div>-->
+</div>
+</body>
+<script src="js/scrollReveal.js/dist/scrollreveal.js"></script>
+<script>
+    (function($) {
+        window.sr= new scrollReveal({
+            reset: true,//控制循环播放
+            move: '50px',
+            mobile: true
+        });
+    })();
+</script>
+</html>

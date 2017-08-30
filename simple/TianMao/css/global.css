@@ -1,0 +1,167 @@
+.slider {
+	width: 762px;
+	position: relative;
+	float: left;
+}
+
+.picFocus {
+	overflow: hidden;
+	zoom: 1;
+}
+
+.picFocus .bd li {
+	vertical-align: middle;
+}
+
+.picFocus .bd img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.picFocus .hd {
+	position: absolute;
+	bottom: 190px;
+	left: 42%;
+	overflow: hidden;
+}
+
+.picFocus .hd ul li {
+	width: 18px;
+	height: 18px;
+	font-size: 9px;
+	text-align: center;
+	line-height: 18px;
+	border-radius: 50%;
+	background: #000000;
+	color: #fff;
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;
+}
+
+.picFocus .hd ul li.on {
+	background: #C40000;
+}
+
+.picScroll-left {
+	overflow: hidden;
+	position: relative;
+}
+
+.picScroll-left .bd ul {
+	overflow: hidden;
+	zoom: 1;
+}
+
+.picScroll-left .bd ul li {
+	margin: 0 8px;
+	float: left;
+	width: 175px;
+	display: inline-block;
+	overflow: hidden;
+	text-align: center;
+}
+
+.picScroll-left .bd ul li .pic img {
+	width: 100%;
+	height: 164px;
+	display: block;
+	padding: 2px;
+}
+
+.picScroll-left .hd {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	overflow: hidden;
+}
+
+.picScroll-left .hd ul {
+	float: right;
+	overflow: hidden;
+	zoom: 1;
+	margin-top: 10px;
+	zoom: 1;
+}
+
+.picScroll-left .hd ul li {
+	width: 18px;
+	height: 18px;
+	font-size: 9px;
+	text-align: center;
+	line-height: 18px;
+	border-radius: 50%;
+	background: #000000;
+	color: #fff;
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;
+}
+
+.picScroll-left .hd ul li.on {
+	background: #C40000;
+}
+
+
+/*左侧导航栏*/
+
+#LeftScroll {
+	    bottom: 370px;
+    position: fixed;
+}
+
+#SideNav{
+	    transition: 0.8s;
+	    display: none;
+}
+.position {
+	position: absolute;
+	    top: -24px;
+    left: -47px;
+}
+
+ul li {
+	list-style: none;
+}
+
+.position li {
+	    background: rgb(102, 102, 102);
+	margin-bottom: 2px;
+}
+
+.position li a {
+	     display: inline-block;
+    width: 24px;
+    line-height: 15px;
+    color: #fff;
+    font-size: 12px;
+    height: 24px;
+    padding: 6px;
+    transition: 0.8s;
+}
+
+.position li.nav {
+	line-height: 36px;
+}
+.position li a.Av{
+	    padding-bottom: 0;
+}
+.position li.ScollActive {
+	background:#DD2727;
+	color: #fff;
+}
+
+.position li.lastColor {
+	background: #989797;
+}
+#LikeBox{
+	
+}
+
+#LikeBox ul {
+	float: left;
+	    width: 236px;
+    margin-right: 12px;
+}
+#LikeBox ul.active{margin-right: 0;}
