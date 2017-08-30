@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,header,
+form,fieldset,input,textarea,p,blockquote,th,td {
+padding: 0;
+margin: 0;
+box-sizing:border-box;
+}
+body {
+	font: 14px "Microsoft YaHei", "宋体", Arial, sans-serif; /*需要修改*/
+	text-align: center; /*为了解决ie5.5下面的居中问题*/
+	background: #eee; /*需要修改*/
+	color: #959595; /*需要修改*/
+    width:650px;
+	margin:0 auto;
+	position: relative;
+}
+@media (max-width:650px){
+	body{width:100%;
+	}
+}
+header{ background:#f60; height:50px;}
+.box_one{ line-height:50px; color:#fff;}
+.box_one a{ float:left; font-size:20px; position:absolute; left:30px; z-index:1; text-decoration:none; color:#fff;}
+
+.img_box img{ width:100%; height:100%}
+.img_box{ color:#fff; position:relative;width:100%;height:600px;
+	}
+
+.time{ color:#fff; position:absolute; right:30px; top:0; margin:auto; width:50px; height:30px; background:rgba(33,33,33,0.3); line-height:30px; border-radius:10px;
+	}
+.time a{ color:#fff; text-decoration:none;}	

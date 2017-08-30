@@ -1,0 +1,199 @@
+@charset "utf-8";
+/*头部*/
+.header{
+    width: 100%;
+    /*得配合视口 固定屏*/
+    height:0.45rem;
+	background-color:#333;
+	font-size: 0.16rem;
+}
+.header li{
+	float:left;
+	width:25%;
+    line-height:0.45rem;
+    text-align:center;
+}
+.header li.active{
+	background-color:#000;
+}
+.header li a{
+	   display:block;
+	   color:#FFF;
+/*	   cursor: pointer;
+       移动端没有这个功能哈哈
+*/}
+
+/*轮播*/
+.adver{
+	max-width:6.4rem;
+    margin:0 auto;
+	height:1.26rem;
+}
+.adver img{
+	width:100%;
+	height:1.26rem;
+}
+
+/*search*/
+.search{
+	max-width:6.4rem;
+    margin:0 auto;
+	height:0.33rem;
+	background-color:#ddd;
+	position: relative;
+	padding: 0.03rem 0 0 0;
+}
+.search input{
+	width:95%;
+	height:0.27rem;
+	/*如果没有定义高根据字体大小撑开*/
+	display: block;
+	margin:0 auto;
+	/*margin:0 auto只对块级元素有作用*/
+    border-radius: 0.04rem;
+    font-size: 0.14rem;
+	padding: 0 .1rem;
+	background-color: #fff;
+/*	background-color: red;
+*/}
+.search button{
+	height:0.27rem;
+	position: absolute;
+	background-color:#eee;
+	border-top-right-radius: 0.06rem;
+	border-bottom-right-radius: 0.06rem;
+    top:0.03rem;
+    right:2.5%;
+    font-size: 0.14rem;
+    color:#666;
+}
+
+/*旅游模块*/
+.tour{
+	padding:0.1rem 0 0 0;
+	max-width:6.4rem;
+    margin:0 auto;
+}
+
+.tour h2,.tour h3{
+	/*width:100%;
+	margin:0 auto; h2 h3标签是文本标签 文本水平居中不是这样的*/
+	font-weight: normal;
+	text-align: center;
+}
+.tour h2{
+	font-size: 0.22rem;
+	margin-bottom: 0.02rem;
+	color:#333;
+}
+.tour h3{
+	font-size: 0.18rem;
+	margin-bottom: 0.04rem;
+}
+.tour .content{
+	width:50%;
+	float:left;
+    box-sizing: border-box;
+    padding: 0 0 .05rem 0;
+    background-color: #eee;
+}
+
+.tour .content img{
+	width:100%;
+	height:1.3rem;
+	padding:0.02rem;
+   border-radius: 0.04rem;
+}
+.tour .txt{
+	padding:0 0.08rem 0 0.08rem;
+}
+
+.tour .content h4{
+	color:#666;
+	font-size:0.14rem;
+	margin-top: 0.02rem;
+	font-weight:normal;
+}
+.tour .content p{
+	color:#666;
+	font-size:0.14rem;
+}
+.tour .info{
+	margin-top: 0.04rem;
+}
+.tour .info span{
+	float:left;
+	color:#FF6600;
+}
+.tour .info span i{
+	color:#000;
+	font-style: normal;
+	font-size: 0.14rem;
+}
+
+.tour .info em{
+	float:right;
+	font-style: normal;
+	font-size: 0.14rem;
+	color:#666;
+}
+/*尾部*/
+/*尾部区域高度自适应不设高*/
+#footer {
+	max-width: 6.4rem;
+	background-color: #222;
+	color: #777;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0.1rem 0;
+	font-size: 0.16rem;
+}
+#footer .top {
+	padding: 0 0 0.05rem 0;
+}
+
+/*媒体查询区域*/
+
+/*媒体查询，大于480px小于640px*/
+@media (min-width:480px) and (max-width:640px){
+     .tour h2{
+	font-size: 0.22rem;
+	
+     }
+     .tour h3{
+	    font-size: 0.18rem;
+	
+    }
+
+      .tour .content h4{
+	    font-size:0.14rem;
+	}
+	
+      .tour .content p{
+	   font-size:0.14rem;
+    }
+
+    #footer {
+	font-size: 0.16rem;
+   }
+}
+/*媒体查询，小于480px*/
+@media(max-width:480px){
+	.tour h2{
+	font-size: 0.19rem;
+	
+     }
+     .tour h3{
+	    font-size: 0.16rem;
+    }
+     .tour .content h4{
+	    font-size:0.12rem;
+	}
+	
+     .tour .content p{
+	   font-size:0.12rem;
+    }
+     #footer {
+	  font-size: 0.14rem;
+   }
+}

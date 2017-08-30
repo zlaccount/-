@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+.head {
+	text-align: center;
+	line-height: 50px;
+	padding-top: 40px;
+	overflow: hidden;
+}
+.clean {
+	margin: 0 10%;
+	float: left;
+	padding: 0 20px;
+	border-radius: 10px;
+	line-height: 30px;
+	height: 30px;
+	color: #fff;
+	background: #f60;
+	font-size: 10px;
+}
+.product img {
+	width: 120px;
+	height: 180px;
+	float: left;
+}
+.product {
+	width: 90%;
+	margin: 10px auto;
+	height: 200px;
+	position: relative;
+	line-height: 40px;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+}
+.product p {
+	padding-left: 40px;
+}
+.product h3 {
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 40px;
+}
+.product .glyphicon {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-size: 30px;
+	height: 30px;
+	color: #f60;
+	bottom: 0;
+}

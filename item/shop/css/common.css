@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, header, form, fieldset, input, textarea, p, blockquote, th, td {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font: 14px "Microsoft YaHei", "宋体", Arial, sans-serif; /*需要修改*/
+	text-align: center; /*为了解决ie5.5下面的居中问题*/
+	background: #fff; /*需要修改*/
+	color: #959595; /*需要修改*/
+	width: 650px;
+	margin: 0 auto;
+	position: relative;
+}
+@media (max-width:650px) {
+body {
+	width: 100%;
+}
+}
+a:hover {
+	color: #f60;
+	direction: inherit;
+}
+header {
+	font-weight: 800;
+	background: #F60;
+	font-size: 20px;
+	line-height: 50px;
+	height: 50px;
+	color: #fff;
+	overflow: hidden;
+	position: fixed;
+	width: inherit;
+	z-index: 1111111;
+}
+header .glyphicon-th-list {
+	font-size: 30px;
+	color: #fff;
+	padding-left: 10px;
+	float: left;
+	margin: 10px;
+}
+header .user {
+	float: right;
+	font-size: 20px;
+	color: #fff;
+	margin: 10px;
+	line-height: 30px;
+}
+footer .glyphicon {
+	color: #fff;
+	font-size: 30px;
+}
+footer {
+	background: #F60;
+	position: fixed;
+	width: inherit;
+	bottom: 0;
+	overflow: hidden;
+	z-index: 11111
+}
+footer .glyphicon-shopping-cart {
+	font-size: 30px;
+	color: #fff;
+}
+footer h2 {
+	float: right;
+}
+footer .nav {
+	width: 25%;
+	height: 50px;
+	padding: 10px 0;
+	float: left;
+}
+footer .active {
+	background: #eee;
+}
+footer .active span {
+	color: #f60;
+}
+.fixed {
+	width: 200px;
+	height: 100%;
+	position: absolute;
+	top: 50px;
+	z-index: 111111;
+	left: -200px;
+}
+.left_menu {
+	width: 200px;
+	height: 100%;
+	background: #333;
+	top: 50px;
+	position: fixed;
+	z-index: 1111l;
+	list-style: none;
+}
+.left_menu li {
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	font-size: 18px;
+	text-align: left;
+	padding-left: 30%;
+}
+.left_menu li .glyphicon {
+	font-size: 18px;
+	margin-right: 5%;
+	color: #fff;
+}
+.white {
+	height: 50px;
+}

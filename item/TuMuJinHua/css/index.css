@@ -1,0 +1,385 @@
+	/*头部区域*/
+	.indexH{
+		width: 100%;
+		height: 80px;
+		position: relative;
+		
+	}
+	.Hbg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: #333;
+	}
+	
+	.MaxWcontainer {
+		width: 1200px;
+		position: relative;
+		margin: 0 auto;
+	    height: 100%;
+        overflow: hidden;
+    }
+	
+	.Hlogo {
+		margin-top: 18px;
+	}
+	
+	.Hnav a {
+		line-height: 80px;
+		display: inline-block;
+		padding: 0 18px;
+	}
+	
+	.Hnav a:hover {
+		background: #000;
+		color: #02B8D6 !important;
+		opacity: 0.6;
+	}
+	/*内容区域*/
+	
+	.secFirstbg {
+		background: #F6F9FC;
+	}
+	
+	.secSecondbg {
+		background: #F1F8FF;
+	}
+	.gongyiSecondbg {
+		background: #5373F9;
+	}
+	
+	.secThreebg {
+		background: #344552;
+	}
+	.gongyiThreebg {
+		background:#3F3A39;
+	}
+	.secFourbg {
+		background: #FFFFFF;
+	}
+	
+	.secFivebg {
+		background: #F6F9FC;
+	}
+	
+	.secSixbg {
+		background: #FFFFFF;
+	}
+	
+	.secSevenbg {
+		background: #fff;
+	}
+	.gongyiSevenbg{
+		background: #F4F9FC ;
+	}
+	.Ctitle {
+		z-index: 55;
+		position: relative;
+	}
+	
+	.Ctitle h3 {
+		font-size: 32px;
+		padding-bottom: 20px;
+	}
+	
+	.Ctitle{
+		font-size: 16px;
+	}
+	.Ctitle .gongyiP{
+		
+		width: 682px;
+        margin: 0 auto;
+	}
+	
+	.Section {
+		padding-top: 75px;
+	}
+	
+
+	.bg {
+		height: 200px;
+		width: 21%;
+		padding: 0 20px;
+	}
+	
+	.bg p{
+		width: 217px;
+        margin: 0 auto;
+        padding-top: 14px
+	}
+	.bg1 {
+		background: url(../img/section_core_3_1.png) no-repeat;
+		background-position-x: 100px;
+	}
+	
+	.bg2 {
+		background: url(../img/section_core_3_2.png) no-repeat;
+		background-position-x: 100px;
+	}
+	
+	.bg3 {
+		background: url(../img/section_core_3_3.png) no-repeat;
+		background-position-x: 100px;
+	}
+	
+	.bg4 {
+		background: url(../img/section_core_3_4.png) no-repeat;
+		background-position-x: 100px;
+	}
+	
+	.bg5 {
+		background: url(../img/section_core_3_5.png) no-repeat;
+		background-position-x: 100px;
+	}
+	
+	.bg6 {
+		background: url(../img/section_core_3_6.png) no-repeat;
+		background-position-x: 100px;
+	}
+	
+	.bg7 {
+		background: url(../img/section_core_3_7.png) no-repeat;
+		background-position-x: 100px;
+	}
+	
+	.bg8 {
+		background: url(../img/section_core_3_8.png) no-repeat;
+		background-position-x: 100px;
+	}
+	
+/*底部区域*/
+	/*头部区域*/
+	.indexF{
+		background: #242424;	
+	}
+	.Fimg{
+		width: 200px;
+        border-left: 1px solid #616161;
+        border-right: 1px solid #616161;
+	}
+	.Fc a{
+		display: inline-block;
+		text-align: center;
+		padding: 0 12px;
+		color: #656767;
+	}
+	.Fc a:hover{
+		color: #fff;
+	}
+	.Fadd p {
+		color: #656767;
+		text-align: center;
+	}
+	/*右侧固定区域*/
+	
+	.Fix {
+		right: 12px;
+		top: 42px;
+		width: 164px;
+	}
+	
+	.FixImg {
+		position: absolute;
+		z-index: 101;
+	}
+	
+	.del {
+		    right: 32px;
+    top: 48px;
+    width: 25px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+    height: 25px;
+} 
+    .del:hover {
+	background:#e6e6e6;
+	
+	}
+	
+	.FixC {
+		border: 1px solid #E8E8E8;
+		width: 142px;
+		left: 8px;
+		position: absolute;
+		top: 60px;
+		border-radius: 8px;
+		background: #fff;
+		z-index: 100;
+	}
+	
+	.FixH {
+		height: 88px;
+	}
+	.FixR{
+		border-top: 1px solid #E8E8E8;
+		height: 57px;
+	}
+	
+	.FixR a {
+		width: 30px;
+		display: inline-block;
+		padding-right: 12px;
+	}
+	
+	.FixR p {
+		width: 100px;
+		line-height: 22px;
+		padding-top: 10px;
+		
+	}
+	.FixR p:hover {
+		color: red;
+		cursor: pointer;
+	}
+	
+	#MoreHelp {
+		height:55px;
+		border-top: 1px solid #E8E8E8;
+	}
+	#MoreHelp p{
+		height: 100%;
+		border: 1px solid #E8E8E8;
+	}
+	#MoreHelp div {
+		position: relative;
+		height: 25px;
+		float: left;
+		width: 18%;
+        margin: 16px 22px;
+	}
+	
+	.erweima {
+		background: url(../img/e1.png) no-repeat;
+	}
+	
+	.erweima:hover {
+		
+		background-position-y: -25px;
+	}
+	
+	#MoreHelp .erweima p {
+    position: absolute;
+    right: 70px;
+    bottom: -4px;
+    background: #fff;
+    border: 1px solid #ccc;
+    height: 216px;
+    width: 137px;
+    border-radius: 8px;
+    display: none;
+	}
+	#MoreHelp .erweima:hover p{display: block;}
+	#MoreHelp .erweima p img{
+    width: 82%;
+    margin: 30px auto 0;		
+	}
+	#MoreHelp .erweima p span{
+              width: 80px;
+    display: block;
+    margin: 0 auto;	
+	}
+	.Top {
+		background: url(../img/t1.png) no-repeat;
+	}
+	
+	.Top:hover {
+		
+		background-position-y:-25px;
+	}
+	.blockImg li{
+	    width: 19%;
+        padding-left: 8px;
+	}
+	.blockImg li img{
+		width: 100%;
+	}
+		/*一点公益*/
+	
+	.gongyiblockImg {
+		height: 690px;
+		background: url(../img/bbc_view_computer.png) no-repeat center;
+		background-position-y: 1px;
+		position: relative;
+		z-index: 102;
+	}
+	
+	.banner {
+		width: 730px;
+		height: 427px;
+		left: 235px;
+		top: 27px;
+		position: absolute;
+		overflow: scroll;
+	}
+	
+	.bannerBg {
+		width: 732px;
+		height: 20px;
+		background: #3F3A39;
+		position: absolute;
+		bottom: 233px;
+		left: 50%;
+		margin-left: -366px
+	}
+	
+	.img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	.img li {
+		float: left;
+		width: 730px;
+		height: 1700px;
+		overflow: hidden;
+	}
+	.img li img{height: 100%;width: 100%;}
+	.prev {
+		
+		left: 80px;
+		top: 27%;
+		
+	}
+	
+	.next {
+		
+		right: 80px;
+		top: 27%;
+		
+	}
+	
+	
+	.SixL span {
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
+		border: 1px solid #ccc;
+	}
+	
+	.caseTwo {
+		width: 440px;
+	}
+	
+	.caseTwo p {
+		line-height: 26px;
+		letter-spacing: 1px;
+	}
+	.SixR {
+		width: 40%;
+	}
+	
+	.blockSevenbg {
+		background: url(../img/bbc_store2.png) no-repeat center;
+		height: 670px;
+	}
+	
+	.abImg {
+		top: -22px;
+		left: 50%;
+		margin-left: -512px;
+	}

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.theme .txt_box .lesson ul{
+	padding:18px 26px;
+}
+.theme .txt_box .lesson li{
+	float:left;
+	width:84px;
+	/*box-sizing: border-box;*/
+	margin-right:88px;
+	
+	margin-bottom: 16px;
+}
+.theme .txt_box .lesson li p{
+	text-align: center;
+	padding:4px 0;
+	font-size:14px;
+	letter-spacing: 2.0;
+}
+.theme .txt_box .lesson li img{
+	width:84px;
+	height:126px;
+}

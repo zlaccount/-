@@ -1,0 +1,251 @@
+@charset "utf-8";
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+    color: #666;
+}
+.logo{
+    padding:0;
+}
+.item:nth-child(1){
+    background:#223240;
+}
+.item:nth-child(2){
+    background:#F5E4DC;
+}
+.item:nth-child(3) {
+    background: #DE2A2D;
+}
+#myCarousel{
+    margin-top:51px;
+}
+.carousel-inner img{
+    /*图片自己撑开宽度所以可居中*/
+    margin:0 auto;
+}
+.carousel-control{
+    font-size:60px;
+}
+.content-header{
+    /*margin:20px 0 20px 0;不管用*/
+    padding:20px 0 20px 0;
+}
+.content-h2{
+    letter-spacing: 1px;
+    font-size:20px;
+    color: #0059b2;
+    text-align: center;
+}
+.content-p{
+    letter-spacing: 1px;
+    font-size:15px;
+    color:#999;
+    text-align: center;
+}
+.media-heading{
+    margin-top:5px;
+    margin-bottom:20px;
+}
+/*这里就没必要媒体查询了 因为已经够小 默认样式*/
+.text-muted{
+    text-decoration: line-through;
+    color:#999;
+    margin-bottom: 10px;
+}
+.content .col{
+    padding:20px;
+}
+
+/*尾部 不设高度*/
+#footer{
+    background-color: #666;
+    color:#eee;
+    text-align: center;
+    padding:20px 20px 15px 20px;
+    border:1px solid #CCCC;
+}
+#footer p{
+    margin-bottom: 10px;
+}
+.tab{
+    background-color: #eee;
+}
+.tab img{
+    width:40%;
+    height:40%;
+}
+.tab2 img{
+    width:65%;
+    height:65%;
+}
+.text{
+    text-align: center;
+}
+.text h3 {
+    font-size: 20px;
+}
+.text p {
+    font-size: 14px;
+}
+/*info模块*/
+
+#jumbotron{
+    padding:48px 0;
+    margin-top:51px;
+    background-image: url(../img/bg.jpg);
+}
+#jumbotron hgroup{
+    padding:0 20px;
+    color:#ccc
+}
+#jumbotron h1 {
+    font-size: 26px;
+}
+#jumbotron h4 {
+    font-size: 15px;
+}
+#information{
+    padding:40px 0;
+    background-color: #eee;
+}
+.info-content{
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #ccc;
+    margin:0 0 20px 0;
+}
+.info-content img{
+    margin:12px 0;
+}
+.info-content h4{
+   padding-top:12px;
+    color:#333;
+    font-size:14px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.info-content p{
+    line-height:2.2;
+}
+.info-right{
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #ccc;
+    padding:0 2px;
+}
+.info-right blockquote{
+    padding:0;
+    margin:0;
+    margin-top: 20px;
+    border-left:5px solid #eee;
+    color:#333;
+}
+.info-right blockquote h2{
+    font-size:20px;
+    padding:5px;
+}
+.info-content-right{
+    margin-bottom: 12px;
+}
+.info-content-right h4{
+    color:#333;
+    font-size:16px;
+    margin-top: 18px;
+}
+.info-content-right div:nth-child(1) img{
+    margin-top:12px;
+}
+.info-content-right div:nth-child(2){
+    padding:0;
+}
+/*about模块*/
+#about{
+    padding:40px 15px;
+    background-color: #eee;
+    box-shadow: 2px 2px 3px #ccc;
+}
+#about .about{
+    background-color: #ffffff;
+    box-shadow: 2px 2px 3px #ccc;
+    padding-bottom: 20px;
+}
+/*不要设置a的boostrap自己设置了*/
+/*#about .list-group a{*/
+    /*background-color: #ffffff;*/
+/*}*/
+#about h4{
+    padding:20px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+#about p{
+    line-height: 2;
+}
+/*媒体查询 没有小于768px，是因为Bootstrap3以移动端优先设计*/
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+    .content-h2 { font-size: 26px; }
+    .content-p { font-size: 16px; }
+    .text h3 {
+        font-size: 22px;
+    }
+    .text p {
+        font-size: 15px;
+    }
+    .tab-img{
+        float:right;
+    }
+    .tab-text{
+        float:left;
+    }
+    #jumbotron  h1 {
+        font-size: 28px;
+    }
+    #jumbotron  h4 {
+        font-size: 16px;
+    }
+    .info-content h4 {
+        font-size: 16px;
+    }
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+    .content-h2 { font-size: 28px; }
+    .content-p { font-size: 17px; }
+    .text h3 {
+        font-size: 24px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    #jumbotron  h1 {
+        font-size: 33px;
+    }
+    #jumbotron  h4 {
+        font-size: 17px;
+    }
+    .info-content h4 {
+        font-size: 18px;
+    }
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+    .content-h2 {
+        font-size: 30px;
+    } .content-p {
+              font-size: 18px;
+    }
+    .text h3 {
+        font-size: 26px;
+    }
+    .text p {
+        font-size: 18px;
+    }
+    #jumbotron  h1 {
+        font-size: 36px;
+    }
+    #jumbotron  h4 {
+        font-size: 18px;
+    }
+    .info-content h4 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>无标题文档</title>
+<link href="css/service.css" rel="stylesheet" type="text/css">
+
+<link href="js/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+</head>
+
+<body>
+<header>
+<div class="box_one">
+ <h2><a href="my_center.html"> < </a>客服中心</h2>
+ </div>
+</header>
+<div class="ZH">
+<a style="color:#F60;" class="a">自助服务</a></div>
+<section class="box_two">
+ <div class="fa fa-truck"><p>物流查询</p></div>
+ <div class="fa fa-bath"><p>催促配送</p></div>
+  <div class="fa fa-object-ungroup"><p>催促退款</p></div>
+</section>
+
+<section class="box_three">
+ <div class="fa fa-cc-jcb"><p>补寄发票</p></div>
+ <div class="fa fa-motorcycle"><p>自助退货</p></div>
+ <div class="fa fa-envelope-open"><p>邮箱地址</p></div>
+ 
+</section>
+<div class="CH">
+<a  style="color:#F60;" class="a">问题查询</a></div>
+
+<section class="box_four">
+ <section class="box"><li class="active">订单问题</li><li>购物问题</li><li>其他问题</li></section>
+ <div class="sub block">
+   <div class="line"></div>
+   <p><a class="left">物流配送</a><a class="right"> > </a></p>
+   <div class="line"></div>
+   <p><a class="left">售后咨询</a><a class="right"> > </a></p>
+   <div class="line"></div>
+   <p><a class="left">退款问题</a><a class="right"> > </a></p>
+   <div class="line"></div>
+   <p><a class="left">退货换货</a><a class="right"> > </a></p>
+   <div class="line"></div>
+ </div>
+ <div class="sub">
+   <div class="line"></div>
+   <p><a class="left">订单修改</a><a class="right"> > </a></p>
+   <div class="line"></div>
+   <p><a class="left">选购商品</a><a class="right"> > </a></p>
+   <div class="line"></div>
+   <p><a class="left">结算支付</a><a class="right"> > </a></p>
+   <div class="line"></div>
+   <p><a class="left">活动咨询</a><a class="right"> > </a></p>
+   <div class="line"></div>
+ </div>
+ <div class="sub">
+     <div class="line"></div>
+   <p><a class="left">我的钱包</a><a class="right"> > </a></p>
+   <div class="line"></div>
+   <p><a class="left">我的卡卷</a><a class="right"> > </a></p>
+   <div class="line"></div>
+   <p><a class="left">账户问题</a><a class="right"> > </a></p>
+   <div class="line"></div>
+   <p><a class="left">投诉与建议</a><a class="right"> > </a></p>
+   <div class="line"></div>
+ </div>
+</section>
+<script>
+$(" .box_four .box li").click(function()
+{
+	$(".box .active").removeClass("active")
+	$(this).addClass("active")
+	var ind=$(this).addClass("active").index()
+	$(".box_four .block").removeClass("block")
+	$(".box_four .sub:eq("+ind+")").addClass("block")
+	})
+</script>
+</body>
+</html>

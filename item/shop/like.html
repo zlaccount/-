@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>无标题文档</title>
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/shopping.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script src="http://cdn.bootcss.com/angular-sanitize/1.6.0-rc.0/angular-sanitize.js"></script>
+<script src="js/like.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="data">
+<header> <span class="glyphicon glyphicon-th-list" onClick="left_menu()"></span> 天天书屋 <a href="logon.html"><span class="user">登录</span></a> </header>
+<section class="white"></section>
+<div class="fixed">
+  <ul  class="left_menu">
+    <a href="index.html">
+    <li><span class="glyphicon glyphicon-home"></span>首页</li>
+    </a> <a href="index.html#bottom">
+    <li><span class="glyphicon glyphicon-tasks"></span>产品展示</li>
+    </a> <a href="comment.html">
+    <li><span class="glyphicon glyphicon-comment"></span>评论</li>
+    </a> <a href="about.html">
+    <li><span class="glyphicon glyphicon-link"></span>关于我们</li>
+    </a>
+  </ul>
+</div>
+<section class="head"> <span ng-click="cle()" class="clean pull-left">清空收藏</span> </section>
+<hr>
+<section class="shopping">
+  <div ng-repeat="x in product" class="product"> <img src="{{x.img}}"> <span ng-click="remov(this)" class="glyphicon glyphicon-trash"></span> <span onClick="add(this)" class="glyphicon glyphicon-shopping-cart"></span>
+    <h3>{{x.title}}</h3>
+    <i>{{x.tags}}</i>
+    <p>价格：100</p>
+  </div>
+</section>
+<section class="white"></section>
+<footer> <a href="index.html">
+  <div class="nav"><span class="glyphicon glyphicon-home"></span></div>
+  </a> <a href="shopping.html">
+  <div class="nav"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+  </a> <a href="like.html">
+  <div class="nav active"><span class="glyphicon glyphicon-heart"></span></div>
+  </a> <a href="my_center.html">
+  <div class="nav"><span class="glyphicon glyphicon-user"></span></div>
+  </a> </footer>
+</body>
+</html>

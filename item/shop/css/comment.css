@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+.conment {
+	color: #333;
+	margin-bottom: 50px;
+}
+.conment p {
+	text-align: left;
+}
+.conment form {
+}
+.conment textarea {
+	background: #eee;
+	color: #959595;
+	resize: none;
+	width: 60%;
+	margin: 0 auto;
+	height: 50px;
+	float: left;
+}
+.conment .conmit {
+	float: left;
+}
+.conment .conmit_btn {
+	margin-left: 5%;
+	width: 20%;
+	height: 50px;
+	text-align: center;
+	background: #f60;
+	border: 1px solid #959595;
+	border-radius: 5px;
+	color: #fff;
+	line-height: 50px;
+	display: block;
+	float: left;
+}
+.ass {
+	overflow: hidden;
+}
+.ass .box_left {
+	width: 20%;
+	float: left;
+	margin: 10px 7.5%;
+}
+.ass .box_left h2 {
+	float: left;
+	font-size: 20px;
+	color: #111;
+}
+.ass .box_left a {
+	color: #f00;
+	line-height: 26px;
+	text-decoration: none;
+}
+.ass .box_right {
+	width: 50%;
+	float: right;
+	margin: 10px 7.5%;
+}
+.ass .box_right a {
+	text-decoration: none;
+	line-height: 26px;
+}
+.ass .box_right .DY {
+	font-size: 20px;
+	float: right;
+	text-decoration: none;
+	cursor: pointer;
+}
+.box_one {
+	overflow: hidden;
+}
+.box_one .top {
+	width: 100%;
+	overflow: hidden;
+}
+.box_one .top a {
+	width: 20%;
+	background: #999;
+	color: #fff;
+	float: left;
+	height: 40px;
+	margin: 0 2.5%;
+}
+.box_one .bottom {
+	overflow: hidden;
+	margin: 10px 0;
+}
+.box_one .bottom a {
+	width: 20%;
+	background: #999;
+	color: #fff;
+	float: left;
+	height: 40px;
+	margin: 0 2.5%;
+}

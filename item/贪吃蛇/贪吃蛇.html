@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <div style="width:800px;height:400px;background-image:url(12.jpg);position:absolute;top:100px;left:100px;" id="gamearea"></div>
+ <!--<div><input type="button" value="test" onclick="test()"style="position:absolute;top:410px"></div>-->
+ </body>
+ <script language="javascript">
+ //绘制食物
+ function Food()
+ {
+	 var len=20;
+	 this.xFood=0;//定义食物的坐标
+	 this.yFood=0;
+	 this.Food=null;//判断有没有食物,有的话清空
+	 //绘制食物
+	 this.showFood=function()
+	 {
+	
+	   if(this.Food==null)//注意是this.Food
+	   {
+		  this.Food=document.createElement("div");//创建食物对象
+		  this.Food.style.width= this.Food.style.height=len+"px";
+		  this.Food.style.backgroundColor="black";
+		  this.Food.style.position="absolute";
+		  document.getElementById("gamearea").appendChild(this.Food);
+
+	  }
+       this.xFood=Math.floor(Math.random()*40);//从0-39随机取数
+	   this.yFood=Math.floor(Math.random()*20);//从0-19随机取数
+	   this.Food.style.left=this.xFood*len+"px";
+	   this.Food.style.top =this.yFood*len+"px";
+	   
+     
+    }
+    
+ }
+
+ //绘制蛇类
+ function Snake()
+ {
+	
+	 this.redirect="right";
+	 var len=20;
+	 this.snakebody=[[0,1,'green',null],[1,1,'green',null],[2,1,'green',null],[3,1,'red',null]];//定义 x y 颜色 蛇节对象
+	 //绘制小蛇
+	 this.showSnake=function()
+	 {
+		 for(var i=0;i<this.snakebody.length;i++)
+		 {
+			 if(this.snakebody[i][3]==null)
+			 {
+				 this.snakebody[i][3]=document.createElement("div");//创建蛇节对象
+				 this.snakebody[i][3].style.width=this.snakebody[i][3].style.height=len+"px";
+				 this.snakebody[i][3].style.backgroundColor=this.snakebody[i][2];
+				 this.snakebody[i][3].style.position="absolute";
+				 document.getElementById("gamearea").appendChild(this.snakebody[i][3]);
+			}
+			this.snakebody[i][3].style.left=this.snakebody[i][0]*len+"px";
+			this.snakebody[i][3].style.top=this.snakebody[i][1]*len+"px";
+
+		 }
+	 }
+	 //showsnake();//测试是否生成蛇
+     //蛇的移动
+	 this.snakeMove=function()
+	 {  
+		 
+		  for(var i=0;i<this.snakebody.length-1;i++)
+		 {
+			 this.snakebody[i][0]=this.snakebody[i+1][0];//移动时后面的坐标就是前面的坐标
+			 this.snakebody[i][1]=this.snakebody[i+1][1];
+		 }
+		 //蛇移动没有碰到食物
+         if(this.redirect=="right")
+		 {
+             this.snakebody[this.snakebody.length-1][0]+=1;
+		 }
+		 if(this.redirect=="left")
+		 {
+			 this.snakebody[this.snakebody.length-1][0]-=1;
+		
+		 }
+		 if(this.redirect=="up")
+		 {
+			 this.snakebody[this.snakebody.length-1][1]+=1;
+		 }
+		 if(this.redirect=="down")
+		 {
+			 this.snakebody[this.snakebody.length-1][1]-=1;
+		 }
+         //this.showsnake()重新绘制蛇
+		 //蛇移动碰到食物
+		 var Xsnake=this.snakebody[this.snakebody.length-1][0];
+		 var Ysnake=this.snakebody[this.snakebody.length-1][1];
+		 if(Xsnake==food.xFood&&Ysnake==food.yFood)
+		 {
+			 var newjie=[0,1,'green',null]//定义一个新的蛇节
+			 this.snakebody.unshift(newjie);//数组snakebody末尾增加一个新的元素
+			 food.showFood();//食物消失，再随机生成一个
+		 }
+          
+		 this.showSnake();//重新绘制蛇
+	 }
+
+
+ }
+
+//声明对象
+	var food=new Food();
+	var snake=new Snake();
+//引用方法
+	food.showFood();
+	snake.showSnake();
+	setInterval("snake.snakeMove()",200);
+	document.onkeydown=function(e){
+                var num = e.keyCode;//通过事件对象获得数值码，进而知道被触发键子
+                if(num==40){
+                    snake.redirect = "up";
+                }
+                if(num==38){
+                    snake.redirect = "down";
+                }
+                if(num==37){
+                    snake.redirect = "left";
+                }
+                if(num==39){
+                    snake.redirect = "right";
+                }
+	}
+
+ </script>
+</html>

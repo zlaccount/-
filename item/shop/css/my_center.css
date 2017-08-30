@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, h1, h2, h3, h4, h5, h6, hr, p, iframe, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td, fieldset {
+	margin: 0;
+	padding: 0
+}
+body {
+	font: 14px "Microsoft YaHei", "宋体", Arial, sans-serif; /*需要修改*/
+	text-align: center; /*为了解决ie5.5下面的居中问题*/
+	background: #fff; /*需要修改*/
+	color: #959595;
+	background: #ccc; /*需要修改*/
+}
+.box_one {
+	background: #f60;
+	margin: 0 auto;
+	height: 300px;
+	padding-top: 50px;
+	position: relative;
+}
+.box_one .glyphicon-edit {
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	left: 50px;
+	top: 100px;
+}
+.box_one .glyphicon-comment {
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	right: 50px;
+	top: 100px;
+}
+.box_one .box {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+.box_one img {
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+}
+.box_one p {
+	color: #fff;
+	cursor: pointer;
+}
+.box_one .title {
+	margin: 20px 0
+}
+.box_one .anniu {
+	width: 100px;
+	background: #12b6e9;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-radius: 10px;
+}
+.box_one .anniu a {
+	color: #fff;
+	cursor: pointer;
+}
+.box_two {
+	width: 100%;
+	height: 70px;
+	margin: 10px 0;
+}
+.box_two .four {
+	width: 25%;
+	float: left;
+}
+.box_two .four .glyphicon {
+	font-size: 30px;
+}
+.box_two .four .glyphicon p {
+	font-size: 14px;
+}
+.box_two .four .glyphicon a {
+	font-size: 14px;
+	color: #999999;
+	text-decoration: none;
+	display: block
+}
+.input {
+	width: 100%;
+}
+.input p {
+	background: #fff;
+	text-align: left;
+	padding-left: 20px;
+	height: 30px;
+	margin: 10px 0;
+	line-height: 30px;
+	text-decoration: none;
+}
+.input p .right {
+	float: right;
+	padding: 0 20px;
+	text-decoration: none;
+}
+.input p a {
+	text-decoration: none;
+	cursor: pointer;
+}

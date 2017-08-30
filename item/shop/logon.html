@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+ <link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.4/css/bootstrap.css" rel="stylesheet">
+<link href="css/logon.css" rel="stylesheet" type="text/css">
+ <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+ <script src="js/jquery.js"></script>
+
+</head>
+
+<body>
+<header>
+<div class="box_two">
+ 
+ <h2><a href="my_center.html"> < </a>登录</h2>
+ </div>
+</header>
+<section ng-app="" class="box_one">
+<div class="box"><img src="images/my_center/1.png">
+</div>
+<form name="myform">
+<div class="form-group has-success" >
+  <label class="control-label" for="inputSuccess1" ></label>
+  <p><input type="tel" name="YH"  class="form-control" ng-model="name" id="inputSuccess1" pattern="^\w{6,13}$"  placeholder="请输入账号" required></p>
+  </div>
+ <div class="alert alert-danger" role="alert"  ng-show="myform.YH.$dirty && myform.YH.$invalid">用户名长度为6-13位</div> 
+  
+<div class="form-group has-success" >
+  <label class="control-label" for="inputError1"></label>
+  <p><input type="password" name="MM" class="form-control" id="inputError1" ng-model="psd" pattern="^\w{6,13}$" placeholder="请输入密码" required></p></div>
+  <div class="alert alert-danger" role="alert"  ng-show="myform.MM.$dirty && myform.MM.$invalid">密码长度为6-13位</div>
+  
+<div class="form-group has-success" >
+<button type="submit" class="btn btn-success" onClick="btn-success()" ng-disabled="myform.YH.$invalid || myform.YX.$invalid || myform.MM.$invalid" disabled="disabled"> 登录
+</div>
+
+</form>
+</section>
+<script>
+$(".btn-success").click(function()
+{
+	window.location.href="index.html"
+	})
+</script>
+</body>
+</html>

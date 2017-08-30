@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.theme .txt_box .img_box{
+	
+}
+
+.theme .txt_box .img_box p{
+	padding:4px 8px;
+	color:#976c48;
+	font-size:14px;
+}
+.theme .txt_box .img_box ul{
+	padding:4px 14px;
+}
+.theme .txt_box .img_box li{
+	float:left;
+	width:175px;
+	box-sizing: border-box;
+	padding-left:18px;	
+	margin-bottom: 22px;
+}
+.theme .txt_box .img_box li img{
+	width:122px;
+	height:120px;
+}

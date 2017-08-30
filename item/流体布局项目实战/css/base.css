@@ -1,0 +1,41 @@
+@charset "utf-8";
+html {
+	font-size: 625%;
+}
+body,h1,h2,h3,h4,p,ul,ol,form,fieldset,figure {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	font-size: .16rem;
+}
+div,input,button{
+	box-sizing:border-box;
+}
+ul,ol,li {
+	list-style: outside none none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+.none {
+	display: none;
+}
+.clearfix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+input,button{
+	border:none;
+	outline:none;
+}

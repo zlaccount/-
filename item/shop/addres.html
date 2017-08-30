@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<link href="css/addres.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+</head>
+
+<body>
+<header>
+<div class="box_one">
+ <a href="acco.html"> < </a>
+ <h2>地址管理</h2>
+ </div>
+</header>
+<section  class="del">
+ <div class="box_two"><script src="js/jquery.js"></script>
+
+  <p>周先洋  134*****763</p>
+  <p>湖北省十堰市茅箭区白浪开发区白浪街道50厂</p>
+  <p>收货时间不限</p>
+  <div class="line"></div>
+ </div>
+ <div class="one">
+  <button type="button" onClick="del(this)">删除</button>
+  <a href="change.html"><input type="button" value="编辑" ></a>
+  </div>
+</section>
+
+<section class="del">
+ <div class="box_two"><script src="js/jquery.js"></script>
+
+  <p>周先洋  134*****763</p>
+  <p>湖北省武汉市武昌区南湖路雅安街中央花园青翠湾2栋三单元</p>
+  <p>收货时间不限</p>
+  <div class="line"></div>
+ </div>
+ <div class="one">
+  <button type="button" onClick="del(this)">删除</button>
+  <a href="change.html"><input type="button" value="编辑" ></a>
+  </div>
+</section>
+
+<section class="del">
+ <div class="box_two"><script src="js/jquery.js"></script>
+
+  <p>周先洋  134*****763</p>
+  <p>江苏省苏州市吴中区唯新路轻剑湖</p>
+  <p>收货时间不限</p>
+  <div class="line"></div>
+ </div>
+ <div class="one">
+  <button type="button" onClick="del(this)">删除</button>
+  <a href="change.html"><input type="button" value="编辑" ></a>
+  </div>
+</section>
+<script>
+ function del(x){
+	 $(x).parent().parent(".del").remove()
+	 }
+ </script>
+</body>
+</html>

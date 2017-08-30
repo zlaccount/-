@@ -1,0 +1,110 @@
+
+/*领券中心*/
+.secLingQuan {
+	background: #fff;
+}
+.LinCenter{
+	    width: 16rem;
+}
+.LinBg{
+	    background: #ea3524;
+    width: 16rem;
+    height: 18.5rem;
+}
+.LinCon{
+	    width: 12rem;
+}
+.LinCon p{
+	color: #fff;
+}
+.LinTitle{
+	    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+.LinX{
+	    width: 4rem;
+    height: 0;
+    border:1.5px solid #fff;
+        top: 4rem;
+    left: 0;
+}
+.LinMore{
+	    width: 11.6rem;
+    height: 2.2rem;
+    display: inline-block;
+    border: 2px solid #fff;
+    line-height: 2.2rem;
+    color: #fff;
+}
+
+.LinJianTou{
+	    background: url(../images/otherImg/sprite_index@1x.png) no-repeat center;
+    background-size: 450%;
+    background-position: -291px -21px;
+       top: -8px;
+    right: 4px;
+    height: 4.6rem;
+    width: 4rem;
+    z-index: 2 !important;
+    cursor: pointer;
+}
+/*领券中心右侧*/
+.LinLi{
+	    width: 14.94rem;
+	        margin-top: 10px;
+}
+.LinDetail{
+	    width: 8.5rem;
+    margin-top: 20px;
+    border-top: 2px solid #ea3524;
+    z-index: 12;
+}
+.LinDtop{
+	background: #fff;
+}
+.LinPrice{
+	color: #ea3524;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+.LinP, .LinD{
+	font-size: 0.4em;
+    font-weight: 400;
+    color:#ea3524;
+}
+.LinP{
+	
+}
+.LinD{
+	width: 7rem;
+}
+.LinDlow{
+	height: 5rem;
+    width: 8.5rem;
+    background-color: #e7e7e7;
+    background:url(../images/seckill/lingquan center/00.jpg) repeat-x 0 0;
+}
+.LinDbuy{
+	
+	width: 6rem;
+    height: 3rem;
+    font-size: 0.8em;
+    color: #666;
+}
+.LinM{
+	 width: 8.5rem;
+    height: 2rem;
+    background: #ea3524;
+    color: #fff;
+    line-height: 2rem;
+    font-size: 0.8em;
+}
+.LinLiImg{
+    top: 3rem;
+    left: 5rem;
+    width: 10rem;
+    height: 10rem;
+    z-index: 1;
+}

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+
+.theme .txt_box .homework ul{
+	padding:18px 14px;
+}
+.theme .txt_box .homework li{
+	float:left;
+	width:141px;
+	/*box-sizing: border-box;*/
+	margin-right:38px;
+	
+	margin-bottom: 22px;
+}
+.theme .txt_box .homework li p{
+	text-align: center;
+	padding:4px 0;
+	font-size:14px;
+	letter-spacing: 2.0;
+}
+.theme .txt_box .homework li img{
+	width:141px;
+	height:184px;
+}

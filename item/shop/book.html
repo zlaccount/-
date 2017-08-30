@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/book.css" type="text/css">
+<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script src="js/jquery.js"></script>
+<script>
+var app = angular.module('joke',[]);
+  app.controller("jo",function($scope){
+   $scope.im=localStorage.src
+	$scope.ti=localStorage.title
+	$scope.info=localStorage.info
+	$scope.tags=localStorage.tags
+})
+if(localStorage.p){
+var str1=localStorage.p,arry= JSON.parse(str1)
+}
+else{
+var	arry=[]
+	}
+function add(){
+	var pa=$(".info")
+var x={
+	tags:pa.children("i").text(),
+	title:pa.children("h3").text(),
+	img:pa.children("img").attr("src")}
+var y=x.title
+     var br=[]
+    for(i in arry){
+		br.push(arry[i].title)
+		}
+       if(br.indexOf(y)==-1){
+		   arry.push(x)
+		   }
+	var str1= JSON.stringify(arry);
+		localStorage.p=str1			
+	location.href="shopping.html"
+	}
+
+</script>
+</head>
+
+<body ng-app="joke" ng-controller="jo">
+<header>
+<div class="box_one">
+ <a href="index.html"> < </a>
+ <h2>图书简介</h2>
+ </div>
+</header>
+<hr>
+<section class="info">
+<h3>{{ti}}</h3>
+<i>{{tags}}</i>
+<img src="{{im}}">
+<p>{{info}}</p>
+</section>
+<section class="white">
+</section>
+<footer onClick="add()">
+加入购物车
+</footer>
+</body>
+</html>
