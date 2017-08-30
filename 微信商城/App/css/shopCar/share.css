@@ -1,0 +1,569 @@
+
+/*header*/
+.header_box {
+    height: 44px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999999;
+}
+.bar{
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    padding: 0 !important;
+}
+.adr-border{
+    border-bottom: solid 2px #e6e6e6;
+    overflow: hidden;
+}
+.bar .title {
+    color: #DF4E19;
+    border-bottom: none;
+    background: #fff;
+    font-size: 16px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    min-width: 30px;
+    height: 43px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+    line-height: 44px;
+}
+
+a.rig_shai {
+    line-height: 35px;
+    color: #DF4E19;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+.back{
+    height: 44px;
+    display: block;
+    line-height: 44px;
+    left: 0;
+    text-decoration: none !important;
+    position: absolute;
+    z-index: 55;
+    width: 40px;
+    text-align: center;
+}
+.eitorbtn{
+    position: absolute;
+    right: 10px;
+    width: 42px;
+    font-size: 14px;
+}
+.car-detail {
+    width: 94%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.empty-car{
+    position: relative;
+    margin-top: 50px;
+}
+.heihei{
+    position: absolute;
+    bottom: 2px;
+    color: #c8c8c8;
+    font-size: 14px;
+    display: none;
+}
+.complete-num,.total_count{
+    display: none;
+}
+.eitor-jifen{
+    position: absolute;
+    bottom: 0px;
+    color: #c8c8c8;
+    font-size: 12px;
+    left: 0;
+}
+#totop {
+    position: fixed;
+    z-index: 99999;
+    bottom: 62px;
+    right: 2%;
+    cursor: pointer;
+    display: none;
+    background: #fff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid 1px #e1e1e1;
+}
+
+#totop a {
+    display: block;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-image: url(../images/icon_return.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*空购物车*/
+@media (min-width: 500px) {
+    .empty-car {
+        width: 415px;
+        margin: 100px auto 0;
+    }
+    .errorMsg {
+        padding-top: .5rem !important;
+    }
+}
+
+.contactshop-refresh *:focus {
+    outline: none;
+}
+
+.contactshop-refresh {
+    width: 100%;
+    margin-top: 14%;
+}
+
+.empty-carImg {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.shop-empty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url(../../images/store-icon/not-shop.png) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    margin-left: -50%;
+}
+
+.shop-refreshInput {
+    margin: 0 auto;
+}
+
+.empty-carBtn {
+    margin-top: 30px;
+    border: none;
+}
+
+.refresh {
+    color: #DF4E19!important;
+    font-size: 14px;
+    height: 26px;
+    border-radius: 4px;
+    display: block;
+    line-height: 26px;
+    border: 1px solid #f26532;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    width:100px;
+    font: initial;
+    text-decoration: none !important;
+}
+.refresh span{
+    padding: 0 10px;
+}
+.errorMsg{
+    color: #a4a0a0;
+    padding-top: 2.5rem;
+    text-align: center;
+    font: initial;
+    font-size: 16px;
+}
+/*商品描述*/
+.sure-div{
+    float: left;
+    margin-left: 10px;
+    overflow: hidden;
+    width: 9rem;
+}
+.sure-price{
+    position: absolute;
+    bottom: 0;
+}
+.sure-price p{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.sure-now{
+    color: #DF4E19;
+    font-size: 0.8rem;
+}
+.sure-old{
+    color: #c8c8c8;
+    font-size: 0.5rem;
+    padding-left: 5px;
+}
+.sure-old .line-throug{
+    text-decoration: line-through;
+}
+
+/*自提*/
+input[type='radio'],input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    vertical-align:middle;
+    opacity: 0;
+
+}
+.input_style{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.input_style input{
+    position: absolute;
+    top: 7px;
+}
+.jifen-radio{
+    background: url(../../images/store-icon/green.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+.radio_bg{
+    background-position: -118px 0 ;
+}
+.checkbox_bg{
+    background-position: 0 0;
+}
+.radio_bg_check{
+    background-position: -166px 0 ;
+}
+.checkbox_bg_check{
+    background-position: -48px 0;
+}
+/*地址*/
+
+.sure-show{
+    background: #fff;
+}
+.shouhuo{
+    overflow: hidden;
+    width: 100%;
+    border-bottom: solid 1px #f7f3f3;
+}
+.select-heji{
+    border-top: solid 1px #f7f3f3;
+    border-bottom:none !important;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+.shouhuo-text{
+    line-height: 40px;
+    font-weight: 600;
+    text-decoration: none !important;
+    color:#000;
+    padding-left: 12px;
+}
+.shouhuo-text,.shou-adr,.shou-jifen{
+    float: left;
+
+}
+.shou-radio{
+    float: right;
+    letter-spacing: 1px;
+}
+.shou-radio span{
+    color: #DF4E19;
+    padding: 0 4px;
+    font-weight: 300 !important;
+}
+.shou-radio span.select-text{
+    color: #000000 ;
+}
+.input-adr{
+    background: url(../../images/store-icon/adr-sure.png) no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+/*添加地址*/
+.settleBox{
+    position: fixed;
+    left: 0px;
+    bottom: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+.car-detail #confirm_cart{
+    float: right;
+    width: 100%;
+    background: #DF4E19;
+    color: #fff;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.adr-padding{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: solid 1px #f7f3f3;
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+}
+.adr-left-name{
+    float: left;
+    width: 26%;
+    line-height: 50px;
+    font-weight: 600;
+}
+.st-control{
+    float: left;
+    width: 70% !important;
+    height: 34px ;
+    margin: 8px 0 ;
+    line-height: 32px;
+}
+.detail-adr{
+    height: 6rem;
+
+}
+
+.abs-input{
+    position: absolute;
+    top:0;
+    left:26%;
+}
+.adr-padding select{
+    position: relative;
+    border: none;
+    height: 50px;
+    width: 40%;
+}
+
+.wrap-Customer{
+    margin-bottom: 2px;
+}
+.detail-adr,.Customer-call{
+    border-bottom: none;
+}
+.wrap-Customer,.wrap-adr-padding{
+    border-bottom: solid 2px #f7f3f3;
+    border-top: solid 2px #f7f3f3;
+}
+.wrap-Customer{
+    border-top:none;
+}
+.add-title{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    height: 44px;
+    line-height: 44px;
+    position: fixed;
+    color: #DF4E19;
+}
+
+/*底部导航*/
+/*防止windows缩放图片时，图像失真*/
+/*组合商品结束*/
+.settle_box_h {
+    height: 60px;
+}
+
+.settle_box {
+    background: #fff;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    z-index: 2;
+    width: 100%;
+    padding: 0 0 0 4%;
+    border-top: solid 1px #e6e6e6;
+}
+
+.settle_box .all_check, .settle_box .total_amount {
+    float: left;
+}
+
+.settle_box .all_check {
+    width:24%;
+    margin-bottom: 0;
+    margin-top: 15px
+}
+
+.settle_box .all_check dd {
+    color: #999999;
+    font-size: 12px;
+}
+
+.settle_box .all_check span {
+    width: 20px;
+    height: 20px;
+    border: solid 1px #a2a2a2;
+    vertical-align: middle;
+    border-radius: 50%;
+    float: left;
+}
+.no-select{
+    color: #fff;
+}
+.settle_box .all_check .disabled {
+    background: #e1e1e1;
+    border: solid 1px #e1e1e1;
+}
+.settle_box .all_check  .pitch_on{
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    color: #DF4E19 !important;
+    font-size: 1.3rem;
+    line-height: 20px;
+}
+.select .pitch_on{
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    color: #DF4E19 !important;
+    font-size: 1.3rem;
+    line-height: 20px;
+}
+
+.settle_box .total_amount {
+    color: #999;
+    font-size: 14px;
+    margin: 0;
+    width: 48%;
+    text-align: right;
+
+}
+
+.settle_box .total_amount dd {
+    margin-top: 1px;
+    clear: both;
+    font-size: 0.6rem;
+}
+
+.settle_box .total_amount dt p {
+    color: #DF4E19;
+    float: right;
+    line-height: 47px;
+}
+
+.settle_box .total_amount dt p:first-letter {
+    font-size: 0.6rem
+}
+
+.settle_box .total_amount dt {
+    font-size: 14px;
+    height: 48px;
+    line-height: 48px;
+    padding-right: 10%;
+    font-weight: 600;
+    color: #000;
+}
+
+.settle_box .settle_btn {
+    float: right;
+    width: 27%;
+    background: #DF4E19;
+    color: #fff;
+    padding: 17px 0;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+#confirm_cart1 {
+    display: none;
+}
+
+
+
+.account_info li {
+    overflow: hidden;
+    position: relative;
+    border-bottom: solid 1px #eee;
+    padding: 0 4%;
+    line-height: 45px;
+}
+/*订单*/
+.order-number{
+    padding-bottom: 10px;
+}
+.status,.see-detail{
+    float: right;
+}
+.order-content{
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px 0;
+    border-top: 1px solid #f2f2f2;
+}
+.order-more{
+    height: 30px;
+    line-height: 28px;
+    margin-top: 10px;
+}
+.see-detail{
+    width: 66px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #E56E44;
+    border-radius: 3px;
+    color: #E56E44;
+    text-decoration: none !important;
+}
+.pay-money{
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none !important;
+}
+.order_adrcontent,.last_div{
+    border-bottom: 4px solid #f2f2f2;
+    margin-bottom: 10px;
+}
+.adr_write{
+    padding-bottom: 10px;
+    line-height: 40px;
+}
+.address_div{
+    float: left;
+    width: 10%;
+    position: relative;
+    overflow: hidden;
+    height: 35px;
+}
+.customer_msg{
+    float: left;
+    padding:0 5px;
+
+}
+.customer_msg p{
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+.adress_icon{
+    font-size: 34px;
+    color: #ccc;
+}

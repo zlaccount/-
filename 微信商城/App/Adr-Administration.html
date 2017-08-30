@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-wap-web-app-capable" content="yes">
+	<meta name="apple-wap-web-app-status-bar-style" content="black-translucent">
+	<title>地址管理</title>
+	<!-- Our CSS stylesheet file -->
+	<link rel="stylesheet" type="text/css" href="css/common/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common/icon.css">
+	<style type="text/css">
+		@font-face {font-family: "iconfont";
+			src: url('iconfont.eot'); /* IE9*/
+			src: url('iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('iconfont.woff') format('woff'), /* chrome, firefox */
+			url('iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+			url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+		}
+
+	</style>
+	<!-- ionic框架  css -->
+	<link href="css/shopCar/share.css" rel="stylesheet" type="text/css" />
+	<link href="css/Adr/Adr.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="header_box">
+	<div class="bar bar-header">
+		<a class="back" href="shop-sure.html"> <i class="icon iconfont">&#xe624;</i></a>
+		<div id="tite" class="h1 title" style=" width: 72%; margin: 0 auto; ">地址管理</div>
+	</div>
+</div>
+<div style="height:44px;"></div>
+<table class="z_i">
+			<tr class="i0">
+				<td width="20%"></td>
+				<td width="35%"></td>
+				<td width="30%"></td>
+				<td width="15%"></td>
+			</tr>
+			<tr class="i1">
+				<td width="15%">
+					<a class='admin-Adr-icon'></a>
+				</td>
+				<td width="85%">
+					<p class="province-area">陈紫薇&nbsp;<span>13476130394</span></p>
+					<p class="customer-road"><span>地址:&nbsp;</span>湖北省武汉市武昌区和平大道铺路</p>
+					<a href="#" class="eitor"><i class="eitor-adr">&#xe606;</i></a>
+					<a href="#" class="del"><i class="del_adr">&#xe618;</i></a>
+				</td>
+			</tr>
+			<tr class="i2">
+				<td width="15%">
+					<a class='admin-Adr-icon'></a>
+				</td>
+				<td width="85%">
+					<p class="province-area">陈紫薇&nbsp;<span>13476130394</span></p>
+					<p class="customer-road"><span>地址:&nbsp;</span>湖北省武汉市武昌区和平大道铺路</p>
+					<a href="#" class="eitor"><i class="eitor-adr">&#xe606;</i></a>
+					<a href="#" class="del"><i class="del_adr">&#xe618;</i></a>
+				</td>
+			</tr>
+			<tr class="i3">
+				<td width="15%">
+					<a class='admin-Adr-icon'></a>
+				</td>
+				<td width="85%">
+					<p class="province-area">陈紫薇&nbsp;<span>13476130394</span></p>
+					<p class="customer-road"><span>地址:&nbsp;</span>湖北省武汉市武昌区和平大道铺路</p>
+					<a href="#" class="eitor"><i class="eitor-adr">&#xe606;</i></a>
+					<a href="#" class="del"><i class="del_adr">&#xe618;</i></a>
+				</td>
+			</tr>
+</table>
+
+<div class="settleBox">
+	<div class="car-detail">
+		<a class="settle_btn" href="Adr-write.html" id="confirm_cart">添加收货地址</a>
+	</div>
+</div>
+
+</body>
+<script src="js/common/jquery-3.1.1.min.js"></script>
+<script src="js/adr/del.js"></script>
+<script>
+    $(function(){
+        $(".del").click(function(){
+            qikoo.dialog.confirm('<h3 class="sure_del">提示</h3>确认要删除此地址吗？',function(){
+            },function(){
+            });
+        })
+    })
+    function del(){
+        $("tr").each(function(index, element) {
+            if(index == 1){
+                $(".console-btn-confirm").click(function(){
+                    var del = $(this).parents(".mod-dialog").siblings(".z_i").find('tr').eq(index);
+                    del.remove();
+                })
+            }
+        });
+    }
+</script>
+</html>

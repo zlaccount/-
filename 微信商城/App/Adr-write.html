@@ -1,0 +1,139 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-wap-web-app-capable" content="yes">
+    <meta name="apple-wap-web-app-status-bar-style" content="black-translucent">
+    <title>填写地址</title>
+    <!-- Our CSS stylesheet file -->
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common/icon.css">
+    <style type="text/css">
+
+        @font-face {font-family: "iconfont";
+            src: url('iconfont.eot'); /* IE9*/
+            src: url('iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('iconfont.woff') format('woff'), /* chrome, firefox */
+            url('iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+            url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+        .iconfont {
+            font-family:"iconfont" !important;
+            font-size:16px;
+            font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+    </style>
+    <link href="css/shopCar/share.css" rel="stylesheet" type="text/css" />
+    <!--弹框-->
+    <link rel="stylesheet" href="css/common/alert.css">
+</head>
+<div class="adr-header">
+    <div class="bar bar-header">
+        <a class="back" href="shop-sure.html"> <i class="icon iconfont">&#xe624;</i></a>
+        <div id="tite" class="add-title" >添加收货地址</div>
+        <a class="rig_shai Preservation"  href="javascript:void(0)" style="margin-right: 2%;position: absolute; top: 5px; right: 3%;">保存</a>
+    </div>
+</div>
+<div class="content-auto">
+    <div id="wrap">
+        <div class="wrap-Customer">
+            <div class="Customer-name adr-padding">
+                <p class="adr-left-name">收货人:</p>
+                <input type="text" placeholder="请输入收货人的姓名" class="st-control" />
+            </div>
+            <div class="Customer-call adr-padding">
+                <p class="adr-left-name">手机号:</p>
+                <input type="text" placeholder="请输入您的电话" class="st-control" />
+            </div>
+        </div>
+        <div class="wrap-adr-padding">
+            <div class="province adr-padding">
+                <p class="adr-left-name">省份:</p>
+                <!--<input type="text" placeholder="请选择您所在的省份" class="st-control abs-input" />-->
+                <select id="seachprov" name="seachprov" onChange="changeComplexProvince(this.value, sub_array, 'seachcity', 'seachdistrict');"></select>
+            </div>
+            <div class="city adr-padding">
+                <p class="adr-left-name">城市:</p>
+                <!--<input type="text" placeholder="请选择您所在的城市" class="st-control abs-input" />-->
+                <select id="seachcity" name="homecity" onChange="changeCity(this.value,'seachdistrict','seachdistrict');"></select>
+            </div>
+            <div class="county adr-padding">
+                <p class="adr-left-name">县/区:</p>
+                <!--<input type="text" placeholder="请选择您所在的城市" class="st-control abs-input" />-->
+                <span id="seachdistrict_div"><select id="seachdistrict" name="seachdistrict"></select></span>
+            </div>
+            <div class="detail-adr adr-padding">
+                <p class="adr-left-name">详细地址:</p>
+                <!--<input type="button"  value="获取地区" onClick="showAreaID()"/>-->
+                <textarea class="st-control" placeholder=""></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/common/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="js/adr/Area.js" type="text/javascript"></script>
+<script src="js/adr/Area.data.js" type="text/javascript"></script>
+<script src="js/adr/placeholder.js"></script>
+<script type="text/javascript">
+    $('[placeholder]').placeholder();
+    $(function (){
+        initComplexArea('seachprov', 'seachcity', 'seachdistrict', area_array, sub_array, '0', '0', '0');
+    });
+
+    //得到地区码
+    function getAreaID(){
+        var area = 0;
+        if($("#seachdistrict").val() != "0"){
+            area = $("#seachdistrict").val();
+        }else if ($("#seachcity").val() != "0"){
+            area = $("#seachcity").val();
+        }else{
+            area = $("#seachprov").val();
+        }
+        return area;
+    }
+
+    function showAreaID() {
+        //地区码
+        var areaID = getAreaID();
+        //地区名
+        var areaName = getAreaNamebyID(areaID) ;
+        alert("您选择的地区码：" + areaID + "      地区名：" + areaName);
+    }
+
+    //根据地区码查询地区名
+    function getAreaNamebyID(areaID){
+        var areaName = "";
+        if(areaID.length == 2){
+            areaName = area_array[areaID];
+        }else if(areaID.length == 4){
+            var index1 = areaID.substring(0, 2);
+            areaName = area_array[index1] + " " + sub_array[index1][areaID];
+        }else if(areaID.length == 6){
+            var index1 = areaID.substring(0, 2);
+            var index2 = areaID.substring(0, 4);
+            areaName = area_array[index1] + " " + sub_array[index1][index2] + " " + sub_arr[index2][areaID];
+        }
+        return areaName;
+    }
+</script>
+<script src="js/common/alert.js"></script>
+<script>
+    ///
+    $(".Preservation").click(function(){
+        $.DialogByZ.Alert({Title: "提示", Content: "保存失败，请重试",BtnL:"确定",FunL:alerts})
+    })
+    function alerts(){
+        $.DialogByZ.Close();
+    }
+
+</script>
+</html>

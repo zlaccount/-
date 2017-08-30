@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>购物车</title>
+
+    <!-- Our CSS stylesheet file -->
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common/icon.css">
+    <style type="text/css">
+        @font-face {font-family: "iconfont";
+            src: url('iconfont.eot'); /* IE9*/
+            src: url('iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('iconfont.woff') format('woff'), /* chrome, firefox */
+            url('iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+            url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+    </style>
+    <!-- ionic框架  css -->
+    <link href="css/shopCar/signin.css" rel="stylesheet" type="text/css" />
+    <link href="css/shopCar/share.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/shopCar/shop-index.css"/>
+</head>
+<body style="background: #f2f2f2;">
+<!--头部-->
+<div class="header_box">
+    <div class="bar bar-header">
+        <a class="back" href="Index.html"> <i class="icon iconfont">&#xe624;</i></a>
+        <header id="tite" class="h1 title" style=" width: 100%; ">购物车<span class="fr eitorbtn" >编辑</span></header>
+    </div>
+</div>
+<div style="height:44px;"></div>
+<!--头部-->
+<div class="content-auto">
+    <div id="wrap">
+        <!--主题-->
+        <div class="no">
+            <div class="empty-car">
+                <div class="empty-carImg">
+                    <div class="shop-empty"></div>
+                </div>
+                <div class="contactshop-refresh">
+                    <div class="shop-refreshInput">
+                        <p class="errorMsg">购物车是空的哦!!!</p>
+                    </div>
+                    <div class="empty-carBtn shop-refreshInput">
+                        <a class="refresh" href="">
+                            <span>刷</span>
+                            <span>新</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="con">
+            <div class="content">
+                <ul ind="0">
+                    <li class="clearfix">
+                        <div class="label fl">
+                            <label>
+                                <input type="checkbox" checked="checked"/>
+                                <img src="images/store-icon/c_checkbox_on.png"/>
+                            </label>
+                        </div>
+                        <div class="img fl">
+                            <img src="images/shopImg/lb01.jpg"/>
+                        </div>
+                        <div class="text fl">
+                            <p class="overflow shop-title">通过不透明度的变化通过不透明度的变化通过不透明度的变化</p>
+                            <p class="clearfix price-btn">
+                                <span class="fl price_now">￥119 <i class="price_old">￥70.00</i></span>
+                                <span class="fr plusbtn">
+                                        <input type="button" value="-" class="btn1 plusInput" />
+                                        <span class="number">1</span>
+                                        <input type="button" value="+"  class="btn2 plusInput"/>
+                                </span>
+                                <span class="eitor-jifen">154积分</span>
+                                <span class="eitor-zi">x</span>
+                                <a class="heihei buy-num">购买数量</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="label fl">
+                            <label>
+                                <input type="checkbox" checked="checked"/>
+                                <img src="images/store-icon/c_checkbox_on.png"/>
+                            </label>
+                        </div>
+                        <div class="img fl">
+                            <img src="images/shopImg/lb01.jpg"/>
+                        </div>
+                        <div class="text fl">
+                            <p class="overflow shop-title">通过不透明度的变化通过不透明度的变化通过不透明度的变化</p>
+                            <p class="clearfix price-btn">
+                                <span class="fl price_now">￥119 <i class="price_old">￥70.00</i></span>
+                                <span class="fr plusbtn">
+                                        <input type="button" value="-" class="btn1 plusInput" />
+                                        <span class="number">1</span>
+                                        <input type="button" value="+"  class="btn2 plusInput"/>
+                                </span>
+                                <span class="eitor-jifen">154积分</span>
+                                <span class="eitor-zi">x</span>
+                                <a class="heihei buy-num">购买数量</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="label fl">
+                            <label>
+                                <input type="checkbox" checked="checked"/>
+                                <img src="images/store-icon/c_checkbox_on.png"/>
+                            </label>
+                        </div>
+                        <div class="img fl">
+                            <img src="images/shopImg/lb01.jpg"/>
+                        </div>
+                        <div class="text fl">
+                            <p class="overflow shop-title">通过不透明度的变化通过不透明度的变化通过不透明度的变化</p>
+                            <p class="clearfix price-btn">
+                                <span class="fl price_now">￥119 <i class="price_old">￥70.00</i></span>
+                                <span class="fr plusbtn">
+                                        <input type="button" value="-" class="btn1 plusInput" />
+                                        <span class="number">1</span>
+                                        <input type="button" value="+"  class="btn2 plusInput"/>
+                                </span>
+                                <span class="eitor-jifen">154积分</span>
+                                <span class="eitor-zi">x</span>
+                                <a class="heihei buy-num">购买数量</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="label fl">
+                            <label>
+                                <input type="checkbox" checked="checked"/>
+                                <img src="images/store-icon/c_checkbox_on.png"/>
+                            </label>
+                        </div>
+                        <div class="img fl">
+                            <img src="images/shopImg/lb01.jpg"/>
+                        </div>
+                        <div class="text fl">
+                            <p class="overflow shop-title">通过不透明度的变化通过不透明度的变化通过不透明度的变化</p>
+                            <p class="clearfix price-btn">
+                                <span class="fl price_now">￥119 <i class="price_old">￥70.00</i></span>
+                                <span class="fr plusbtn">
+                                        <input type="button" value="-" class="btn1 plusInput" />
+                                        <span class="number">1</span>
+                                        <input type="button" value="+"  class="btn2 plusInput"/>
+                                </span>
+                                <span class="eitor-jifen">154积分</span>
+                                <span class="eitor-zi">x</span>
+                                <a class="heihei buy-num">购买数量</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="total"><p class="total_num">合计&nbsp;:&nbsp;</p><number></number>件</div>
+            </div>
+        </div>
+        <!--主题-->
+    </div>
+</div>
+<!--结算-->
+<div class="bottom fixed">
+    <div class="fl bottom-label">
+        <label>
+            <input type="checkbox" checked="checked"/>
+            <img src="images/store-icon/c_checkbox_on.png" class="fl" />
+            全选
+        </label>
+    </div>
+
+    <div class="fr account">
+        合计：<span></span>
+        <a class="sett footbtn" href="shop-sure.html">结算</a>
+    </div>
+</div>
+<!--结算-->
+<!--删除-->
+<div class="bottom fixed" style="display: none;">
+    <div class="fl bottom-label">
+        <label>
+            <input type="checkbox" checked="checked"/>
+            <img src="images/store-icon/c_checkbox_on.png" class="fl" />
+            全选
+        </label>
+    </div>
+
+    <div class="fr del_num">
+        <a class="delete footbtn">删除</a>
+    </div>
+
+</div>
+<!--删除-->
+<!--弹框-->
+<div class="text1 fixed">
+    <form>
+        <input type="number"/>
+        <input type="button"  value="确定"/>
+    </form>
+</div>
+<div class="alert fixed"></div>
+<!--弹框-->
+<script src="js/common/jquery-3.1.1.min.js"></script>
+<script src="js/shopCar/count.js"></script>
+</body>
+</html>

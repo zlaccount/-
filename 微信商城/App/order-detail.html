@@ -1,0 +1,312 @@
+
+<!doctype html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-wap-web-app-capable" content="yes">
+    <meta name="apple-wap-web-app-status-bar-style" content="black-translucent">
+    <title>购物车 </title>
+    <!-- Our CSS stylesheet file -->
+    <link rel="stylesheet" type="text/css" href="css/common/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common/icon.css">
+    <style type="text/css">
+        @font-face {font-family: "iconfont";
+            src: url('iconfont.eot'); /* IE9*/
+            src: url('iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('iconfont.woff') format('woff'), /* chrome, firefox */
+            url('iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+            url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+    </style>
+    <!-- ionic框架  css -->
+    <link href="css/shopCar/signin.css" rel="stylesheet" type="text/css" />
+    <link href="css/shopCar/share.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="header_box">
+    <div class="bar bar-header">
+        <a class="back" href="order-pay.html"> <i class="icon iconfont">&#xe624;</i></a>
+        <div id="tite" class="h1 title" style=" width: 72%; margin: 0 auto; ">商品订单</div>
+    </div>
+</div>
+<div style="height:44px;"></div>
+<form  method="post"  name="cart_form" target="_self" id="cart_form" action="">
+    <!--list-->
+    <div class="commodity_list_box">
+        <!--商品列表-->
+        <div class="commodity_box">
+            <div class="commodity_list">
+                <!--商品-->
+                <ul class="commodity_list_term">
+                    <li class="select ">
+                        <div class="order-number car-detail">
+                            <a href="">订单编号:<span>28372525793</span></a>
+                            <a href="" class="status">待发货</a>
+                        </div>
+                        <div class="order-content">
+                            <div class="car-detail">
+                                <img src="images/1.jpg"  class="order-img"/>
+                                <div class="div_center">
+                                    <h4>新疆苹果</h4>
+                                    <div class="eitor-num">
+                                        <p class="now_value shop-quantity order-price">
+                                            ￥<b class="qu_su">25.00</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="div_right">
+                                    <i class="i-left" onclick="reducew(this)">-</i>
+                                    <span class="zi">1</span>
+                                    <p class="order_x" >x</p>
+                                    <input type="hidden" value="84">
+                                    <i class="i-right" onclick="plusw(this)">+</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-more car-detail">
+                            <a href="" class="pay-money">实付款:</span><span>￥0.00</span></a>
+                            <a href="order-more.html" class="see-detail">查看详情</a>
+                        </div>
+                    </li>
+                    <li class="select ">
+                        <div class="order-number car-detail">
+                            <a href="">订单编号:<span>28372525793</span></a>
+                            <a href="" class="status">待发货</a>
+                        </div>
+                        <div class="order-content">
+                            <div class="car-detail">
+                                <img src="images/1.jpg"  class="order-img"/>
+                                <div class="div_center">
+                                    <h4>新疆苹果</h4>
+                                    <div class="eitor-num">
+                                        <p class="now_value shop-quantity order-price">
+                                            ￥<b class="qu_su">25.00</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="div_right">
+                                    <i class="i-left" onclick="reducew(this)">-</i>
+                                    <span class="zi">1</span>
+                                    <p class="order_x" >x</p>
+                                    <input type="hidden" value="84">
+                                    <i class="i-right" onclick="plusw(this)">+</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-more car-detail">
+                            <a href="" class="pay-money">实付款:</span><span>￥0.00</span></a>
+                            <a href="order-more.html" class="see-detail">查看详情</a>
+                        </div>
+                    </li>
+                    <li class="select ">
+                        <div class="order-number car-detail">
+                            <a href="">订单编号:<span>28372525793</span></a>
+                            <a href="" class="status">待发货</a>
+                        </div>
+                        <div class="order-content">
+                            <div class="car-detail">
+                                <img src="images/1.jpg"  class="order-img"/>
+                                <div class="div_center">
+                                    <h4>新疆苹果</h4>
+                                    <div class="eitor-num">
+                                        <p class="now_value shop-quantity order-price">
+                                            ￥<b class="qu_su">25.00</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="div_right">
+                                    <i class="i-left" onclick="reducew(this)">-</i>
+                                    <span class="zi">1</span>
+                                    <p class="order_x" >x</p>
+                                    <input type="hidden" value="84">
+                                    <i class="i-right" onclick="plusw(this)">+</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-more car-detail">
+                            <a href="" class="pay-money">实付款:</span><span>￥0.00</span></a>
+                            <a href="order-more.html" class="see-detail">查看详情</a>
+                        </div>
+                    </li>
+                    <li class="select ">
+                        <div class="order-number car-detail">
+                            <a href="">订单编号:<span>28372525793</span></a>
+                            <a href="" class="status">待发货</a>
+                        </div>
+                        <div class="order-content">
+                            <div class="car-detail">
+                                <img src="images/1.jpg"  class="order-img"/>
+                                <div class="div_center">
+                                    <h4>新疆苹果</h4>
+                                    <div class="eitor-num">
+                                        <p class="now_value shop-quantity order-price">
+                                            ￥<b class="qu_su">25.00</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="div_right">
+                                    <i class="i-left" onclick="reducew(this)">-</i>
+                                    <span class="zi">1</span>
+                                    <p class="order_x" >x</p>
+                                    <input type="hidden" value="84">
+                                    <i class="i-right" onclick="plusw(this)">+</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-more car-detail">
+                            <a href="" class="pay-money">实付款:</span><span>￥0.00</span></a>
+                            <a href="order-more.html" class="see-detail">查看详情</a>
+                        </div>
+                    </li>
+                    <li class="select ">
+                        <div class="order-number car-detail">
+                            <a href="">订单编号:<span>28372525793</span></a>
+                            <a href="" class="status">待发货</a>
+                        </div>
+                        <div class="order-content">
+                            <div class="car-detail">
+                                <img src="images/1.jpg"  class="order-img"/>
+                                <div class="div_center">
+                                    <h4>新疆苹果</h4>
+                                    <div class="eitor-num">
+                                        <p class="now_value shop-quantity order-price">
+                                            ￥<b class="qu_su">25.00</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="div_right">
+                                    <i class="i-left" onclick="reducew(this)">-</i>
+                                    <span class="zi">1</span>
+                                    <p class="order_x" >x</p>
+                                    <input type="hidden" value="84">
+                                    <i class="i-right" onclick="plusw(this)">+</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-more car-detail">
+                            <a href="" class="pay-money">实付款:</span><span>￥0.00</span></a>
+                            <a href="order-more.html" class="see-detail">查看详情</a>
+                        </div>
+                    </li>
+                    <li class="select ">
+                        <div class="order-number car-detail">
+                            <a href="">订单编号:<span>28372525793</span></a>
+                            <a href="" class="status">待发货</a>
+                        </div>
+                        <div class="order-content">
+                            <div class="car-detail">
+                                <img src="images/1.jpg"  class="order-img"/>
+                                <div class="div_center">
+                                    <h4>新疆苹果</h4>
+                                    <div class="eitor-num">
+                                        <p class="now_value shop-quantity order-price">
+                                            ￥<b class="qu_su">25.00</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="div_right">
+                                    <i class="i-left" onclick="reducew(this)">-</i>
+                                    <span class="zi">1</span>
+                                    <p class="order_x" >x</p>
+                                    <input type="hidden" value="84">
+                                    <i class="i-right" onclick="plusw(this)">+</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-more car-detail">
+                            <a href="" class="pay-money">实付款:</span><span>￥0.00</span></a>
+                            <a href="order-more.html" class="see-detail">查看详情</a>
+                        </div>
+                    </li>
+                    <li class="select ">
+                        <div class="order-number car-detail">
+                            <a href="">订单编号:<span>28372525793</span></a>
+                            <a href="" class="status">待发货</a>
+                        </div>
+                        <div class="order-content">
+                            <div class="car-detail">
+                                <img src="images/1.jpg"  class="order-img"/>
+                                <div class="div_center">
+                                    <h4>新疆苹果</h4>
+                                    <div class="eitor-num">
+                                        <p class="now_value shop-quantity order-price">
+                                            ￥<b class="qu_su">25.00</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="div_right">
+                                    <i class="i-left" onclick="reducew(this)">-</i>
+                                    <span class="zi">1</span>
+                                    <p class="order_x" >x</p>
+                                    <input type="hidden" value="84">
+                                    <i class="i-right" onclick="plusw(this)">+</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-more car-detail">
+                            <a href="" class="pay-money">实付款:</span><span>￥0.00</span></a>
+                            <a href="order-more.html" class="see-detail">查看详情</a>
+                        </div>
+                    </li>
+                    <li class="select ">
+                        <div class="order-number car-detail">
+                            <a href="">订单编号:<span>28372525793</span></a>
+                            <a href="" class="status">待发货</a>
+                        </div>
+                        <div class="order-content">
+                            <div class="car-detail">
+                                <img src="images/1.jpg"  class="order-img"/>
+                                <div class="div_center">
+                                    <h4>新疆苹果</h4>
+                                    <div class="eitor-num">
+                                        <p class="now_value shop-quantity order-price">
+                                            ￥<b class="qu_su">25.00</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="div_right">
+                                    <i class="i-left" onclick="reducew(this)">-</i>
+                                    <span class="zi">1</span>
+                                    <p class="order_x" >x</p>
+                                    <input type="hidden" value="84">
+                                    <i class="i-right" onclick="plusw(this)">+</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-more car-detail">
+                            <a href="" class="pay-money">实付款:</span><span>￥0.00</span></a>
+                            <a href="order-more.html" class="see-detail">查看详情</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 商品列表 end -->
+    </div>
+    <!-- end -->
+
+    <!-- footer -->
+    <div style="height:55px;"></div>
+    <div class="foot_nav">
+        <div class='foot_tabs' id="tabs">
+            <ul class='foot_horizontal'>
+                <li rel="foot_tab-1"><a href="Index.html" class="shop_city">商城</a></li>
+                <li rel="foot_tab-2" class="selectActive"><a href="shop-order.html" class="person_order">个人订单</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end -->
+</form>
+
+</body>
+
+<script src="js/common/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/common/foot_nav_tab.js"></script>
+<script type="text/javascript">
+    tabs_takes.init("tabs");
+</script>
+</html>

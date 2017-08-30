@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<title>商品详情</title>
+	<link rel="stylesheet" type="text/css" href="css/common/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common/icon.css">
+	<style type="text/css">
+
+		@font-face {font-family: "iconfont";
+			src: url('iconfont.eot'); /* IE9*/
+			src: url('iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('iconfont.woff') format('woff'), /* chrome, firefox */
+			url('iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+			url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+		}
+		.iconfont {
+			font-family:"iconfont" !important;
+			font-size:16px;
+			font-style:normal;
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-stroke-width: 0.2px;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+	</style>
+	<!-- Our CSS stylesheet file -->
+	<link rel="stylesheet" href="js/dist/css/swiper.min.css"/>
+	<link rel="stylesheet" href="css/shop-detail/shop-detail.css"/>
+	<!-- ionic框架  css -->
+	<link href="css/shopCar/signin.css" rel="stylesheet" type="text/css" />
+	<link href="css/shopCar/share.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div style="display: none">
+	<input type="hidden" id="share_title" value="">
+	<input type="hidden" id="share_link" value="">
+	<input type="hidden" id="share_desc" value="">
+	<input type="hidden" id="share_imgUrl" value="">
+</div>
+<div class="header_box">
+	<div class="bar bar-header">
+		<a class="back" href="Index.html"> <i class="icon iconfont">&#xe624;</i></a>
+		<div id="tite" class="h1 title" style=" width: 72%; margin: 0 auto; ">商品详情</div>
+	</div>
+</div>
+<div style="height:44px;"></div>
+<div class="content-auto">
+	<div id="wrap">
+		<div class="swiper-container">
+			<div class="swiper-wrapper" id="swiper-wrapper">
+				<div class="swiper-slide"><a href="#"><img src="images/shopImg/lb01.jpg" alt=""></a></div>
+				<div class="swiper-slide"><a href="#"><img src="images/shopImg/lb02.jpg" alt=""></a></div>
+				<div class="swiper-slide"><a href="#"><img src="images/shopImg/lb03.jpg" alt=""></a></div>
+				<div class="swiper-slide"><a href="#"><img src="images/shopImg/lb04.jpg" alt=""></a></div>
+			</div>
+			<div class="pagination"></div>
+		</div>
+		<div class="shop-Wdetail">
+			<h4>新疆苹果</h4>
+			<div class="price-box">
+				<p class="now-price"><span>￥</span>71.16</p>
+				<p class="yuanjia">原价:<span>￥52.00</span>&nbsp;/&nbsp;88积分</p>
+			</div>
+			<div class="buy_center">
+				<p class="buy-num">购买数量</p>
+				<input id="5" data-step="1" data-min="1" data-max="50" data-digit="0" value="1"/>
+			</div>
+		</div>
+        <div class="shop-miaoshu">
+            <div class="miaoshu-title"><span class="line_left"></span><p>图文详情</p><span class="line_right"></span></div>
+            <a href="" class="center-shop"><img src="images/shopImg/xq01.jpg" alt=""></a>
+            <a href="" class="center-shop"><img src="images/shopImg/xq02.jpg" alt=""></a>
+            <a href="" class="center-shop"><img src="images/shopImg/xq03.jpg" alt=""></a>
+            <a href="" class="center-shop"><img src="images/shopImg/xq04.jpg" alt=""></a>
+            <a href="" class="center-shop"><img src="images/shopImg/xq05.jpg" alt=""></a>
+            <a href="" class="center-shop"><img src="images/shopImg/xq06.jpg" alt=""></a>
+            <a href="" class="center-shop"><img src="images/shopImg/xq07.jpg" alt=""></a>
+        </div>
+	</div>
+</div>
+<div class="shop-bottom">
+    <div class="div_car">
+        <a href="shopCar.html" class="car_text">购物车<i  class="carImg"></i></a>
+        <div class="carBtn">
+            <a href="" class="addCar">加入购物车</a>
+            <a href="shop-sure.html" class="liji_buy">立即抢购</a>
+        </div>
+    </div>
+
+</div>
+<script src="js/common/jquery-3.1.1.min.js"></script>
+<script src="js/dist/js/swiper.min.js"></script>
+<script src="js/shop-detail/num-alignment.js"></script>
+
+<script>
+    // 初始化
+    alignmentFns.initialize();
+</script>
+</body>
+</html>
+

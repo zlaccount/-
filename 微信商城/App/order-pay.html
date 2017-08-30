@@ -1,0 +1,120 @@
+
+<!doctype html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-wap-web-app-capable" content="yes">
+	<meta name="apple-wap-web-app-status-bar-style" content="black-translucent">
+	<title>购物车 </title>
+	<!-- Our CSS stylesheet file -->
+	<link rel="stylesheet" type="text/css" href="css/common/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common/icon.css">
+    <style type="text/css">
+        @font-face {font-family: "iconfont";
+            src: url('iconfont.eot'); /* IE9*/
+            src: url('iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('iconfont.woff') format('woff'), /* chrome, firefox */
+            url('iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+            url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+    </style>
+	<!-- ionic框架  css -->
+	<link href="css/shopCar/share.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/shopCar/shop-index.css"/>
+	<link rel="stylesheet" href="css/common/alert.css">
+</head>
+<body>
+<!--头部-->
+<div class="header_box">
+	<div class="bar bar-header">
+		<a class="back" href="shopCar.html"> <i class="icon iconfont">&#xe624;</i></a>
+		<header id="tite" class="h1 title" style=" width: 100%; ">确认订单</header>
+	</div>
+</div>
+<div style="height:44px;"></div>
+<!--头部-->
+<div class="content-auto">
+    <div id="wrap">
+        <!--商品-->
+        <div class="con">
+            <div class="content">
+                <ul ind="0">
+                    <li class="clearfix sure_lishop">
+                        <div class="label fl">
+                            <label>
+                                <input type="checkbox" checked="checked"/>
+                                <img src="images/store-icon/c_checkbox_on.png"/>
+                            </label>
+                        </div>
+                        <div class="img fl">
+                            <img src="images/shopImg/lb01.jpg"/>
+                        </div>
+                        <div class="text fl">
+                            <p class="overflow shop-title">通过不透明度的变化通过不透明度的变化通过不透明度的变化</p>
+                            <p class="clearfix price-btn sure_price">
+                                <span class="fl price_now">￥119 <i class="price_old">￥70.00</i><i class="sure-jifen">&nbsp;/&nbsp;154积分</i></span>
+                                <span class="fr plusbtn">
+                                        <input type="button" value="-" class="btn1 plusInput" style="display: none"/>
+                                        <span class="number" style="display: block">1</span>
+                                        <input type="button" value="+"  class="btn2 plusInput" style="display: none"/>
+                                </span>
+                                <span class="eitor-zi" style="display: block">x</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <p class="total sure_total">共<number></number>件&nbsp;&nbsp;合计：<span></span></p>
+            </div>
+        </div>
+        <!--商品-->
+        <!--地址-->
+        <div class="sure-show">
+            <div class="shouhuo">
+                <div class="car-detail">
+                    <p class="shouhuo-text">收货方式</p>
+                    <p class="shou-radio">
+                        <lable style="margin-right: 10px;"><i class='input_style radio_bg radio_bg_check'>&#xe6c3;<input type="radio" name="hot"></i>自提</lable>
+                        <lable><i class='input_style radio_bg'><input type="radio" name="hot">&#xe6c3;</i>邮寄</lable>
+                    </p>
+                </div>
+            </div>
+            <div class="shouhuo">
+                <div class="car-detail">
+                    <a class='input-adr'></a>
+                    <a class="shouhuo-text" href="Adr-write.html">请填写您的收货地址</a>
+                </div>
+            </div>
+            <div class="shouhuo">
+                <div class="car-detail">
+                    <p class="shou-jifen">
+                        <lable>
+                            <i class='jifen-radio checkbox_bg'><input type="checkbox" name="q" value="11"></i>
+                        </lable>
+                    </p>
+                    <p class="shouhuo-text"> 使用积分</p>
+                    <p class="shou-radio shouhuo-text ">最高可使用<span>308</span>积分</p>
+                </div>
+            </div>
+        </div>
+        <!--地址-->
+    </div>
+</div>
+<!--结算-->
+<div style="height:55px;"></div>
+<div class="bottom fixed">
+	<div class="fr account">
+		仅需支付：<span></span>
+		<div class="sett footbtn confirmBtn">结算</div>
+	</div>
+</div>
+<!--结算-->
+</body>
+<script src="js/common/jquery-3.1.1.min.js"></script>
+<!--计算弹框-->
+<script type="text/javascript" src="js/shopCar/runend.js"></script>
+<script src="js/common/alert.js"></script>
+<script src="js/shopCar/count.js"></script>
+</html>

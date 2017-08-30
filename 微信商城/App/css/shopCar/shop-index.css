@@ -1,0 +1,288 @@
+/*å¤´éƒ¨*/
+.con {
+
+}
+
+.content {
+
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/*åˆ—è¡¨*/
+.list {
+    width: 100%;
+    height: 2rem;
+    padding: .6rem;
+    border-bottom: 2px solid gray;
+}
+
+.list p {
+    margin-left: 1.4rem;
+}
+
+ul li {
+    width: 100%;
+    border-bottom: 2px solid #f2f2f2;
+    padding: 10px 0px;
+    background: #fff;
+}
+
+.sure_lishop {
+    border-bottom: 1px solid #f2f2f2 !important;
+}
+
+ul li .label {
+    width: 10%;
+    overflow: hidden;
+    padding: 37px 2%;
+}
+
+ul li .img {
+    width: 30%;
+}
+@media (min-width: 500px) {
+
+}
+ul li .text {
+    width: 56%;
+    margin-left: 10px;
+    position: relative;
+    height: 106px;
+}
+
+ul li .text p {
+    width: 100%;
+}
+
+.price-btn {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 32px;
+}
+
+.sure_price {
+    height: 17px;
+}
+
+.plusbtn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.eitor-zi {
+    float: right !important;
+    padding-right: 12px;
+    position: absolute;
+    right: 2px;
+    bottom: 3px;
+    display: none;
+    font-size: 12px;
+}
+
+.shop-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.price_now {
+    font-size: 16px;
+    color: #DD4E26;
+}
+
+.price_old {
+    color: #c8c8c8;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.sure-jifen {
+    color: #c8c8c8;
+    font-size: 12px;
+}
+
+ul li .text p input {
+    background: #e6e6e6 !important;
+}
+
+ul li .text p input, .number {
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: rgba(255, 255, 255, .7);
+    color: #666;
+    font-size: 12px;
+}
+
+.overflow {
+    margin-bottom: .2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.red {
+    color: #701c17;
+}
+
+ul li .img img {
+    width: 100%;
+    height: 100%;
+}
+
+ul li label img, .list label img {
+    width: 20px;
+    height: 20px;
+}
+
+.account span {
+    color: #DD4E26;
+    font: initial;
+}
+
+.total {
+    height: 55px;
+    line-height: 55px;
+    background: white;
+    color: #DD4E26;
+    text-align: center;
+    position: fixed;
+    right: 4rem;
+    bottom: 0;
+    z-index: 11;
+    width: 7rem;
+    display: none;
+}
+
+.sure_total {
+    display: block !important;
+    position: relative !important;
+    right: 0;
+    width: 100% !important;
+    color: #000;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 600;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.sure_total span {
+    font: initial;
+}
+
+.total_num, .account {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    height: 55px;
+    line-height: 55px;
+}
+
+.total span {
+    color: #DD4E26;
+}
+
+/*åˆ—è¡¨*/
+/*åº•éƒ¨ç»“ç®—*/
+.bottom {
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    background: white;
+    border-top: solid 1px #e6e6e6;
+}
+
+.bottom-label {
+    height: 55px;
+    line-height: 55px;
+}
+
+.bottom img {
+    width: 20px;
+    height: 20px;
+    margin-top: 18px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.footbtn {
+    width: 4rem;
+    height: 55px;
+    background: #DD4E26;
+    color: white;
+    margin-left: .5rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 55px;
+    text-decoration: none !important;
+}
+.footbtn:hover{
+    color: #fff;
+}
+/*åº•éƒ¨ç»“ç®—*/
+/*å¼¹æ¡†1*/
+.text1 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(200, 200, 200, .7);
+    display: none;
+    -webkit-display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1 form {
+    width: 70%;
+    height: 5rem;
+    background: white;
+}
+
+.text1 form input[type=number] {
+    width: 40%;
+    height: 1.8rem;
+    margin: .8rem 30%;
+    border: .04rem solid black;
+}
+
+.text1 form input[type=button] {
+    width: 100%;
+    height: 1.6rem;
+    background: #701C17;
+    color: white;
+}
+
+/*å¼¹æ¡†1*/
+.alert {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    color: red;
+    background: white;
+    bottom: 5rem;
+    display: none;
+}
+
+/*æ²¡æœ‰æ•°æ®*/
+.no {
+    width: 100%;
+    height: 93%;
+    background: white;
+    font-weight: bold;
+    color: #666;
+    display: -webkit-box;
+    -webkit-box-pack: center; /*å®žçŽ°æ°´å¹³å±…ä¸­*/
+    -webkit-box-align: center; /*åž‚ç›´å±…ä¸­ï¼Œä¸éœ€è¦åˆ é™¤å³å¯*/
+
+}
+
+/*æ²¡æœ‰æ•°æ®*/
