@@ -12,18 +12,29 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 address, caption, cite, code, dfn, em, th, var {font-style: normal; font-weight: 400;}
 table{border-collapse: collapse; border-spacing: 0;}
 ol, ul, li{ list-style: none; }
-img { border: none ; display: block;vertical-align:middle;cursor:pointer;width: 100%;
-height: 100%; }
+img { border: none ; display: block;vertical-align:middle;cursor:pointer }
 i,em{ font-style: normal; }
 button,input,select,textarea { font-size: 100%;font-family:Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;cursor: pointer; }
 h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight: 400;  }
-a{color:#666;text-decoration:none;cursor: pointer;}
+a{color:#666;text-decoration:none}
 a:hover{color:#c81623;}
 *{margin:0;padding:0}
-
+.webkit-width{
+	min-width:1190px !important;
+}
+.chrome-width{
+	min-width:1190px !important;
+}
+.mini-width{
+	min-width: 990px !important;
+}
+.Mar-Width {
+	width: 1190px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
 /*清除浮动*/
-
-.clear{height:0; overflow:hidden; clear:both}
 .clearfix :before, .clearfix:after {content: " "; display: table; }
 .clearfix :after   { 
     visibility: hidden;
@@ -39,7 +50,6 @@ a:hover{color:#c81623;}
 .b1  { border: 1px solid #EAE9E9  !important;       }
 .b1n { border: none !important ;                    }
 .b1red{border: 1px solid red  !important; }
-.bt1  { border-top: 1px solid #EAE9E9  !important; }
 .br  { border-right: 1px solid #EAE9E9  !important; }
 .brn { border-right: none !important;               }
 .bl  { border-left:  1px solid #EAE9E9  !important; }
@@ -48,7 +58,6 @@ a:hover{color:#c81623;}
 .bln { border-bottom:none !important;               }
 /*圆角*/
 .br50    { border-radius: 50%;  }
-.br4    { border-radius: 4px; }
 .br10    { border-radius: 10px; }
 /*显示和隐藏*/
 .inline-block{ display: inline-block;     }
@@ -60,20 +69,21 @@ a:hover{color:#c81623;}
 .relative{ position: relative !important; }
 .absolute{ position: absolute !important; }
 .fixed   { position: fixed !important; }
+.z50  { z-index: 50;  }
+.z100 { z-index: 100; }
+.z200 { z-index: 200; }
 /*宽和高*/
 .w100 { width: 100%;  }
 .h100 { height: 100%; }
 /*外边距*/ 
 .ma   { margin: 0 auto;      }
-.m10  { margin:10px;         }
-.m20  { margin:20px;         }
 .mta10{ margin: 10px auto 0; }
 .mta20{ margin: 20px auto 0; }
 .mta30{ margin: 30px auto 0; }
+
 .mt5  { margin-top: 5px !important; }
 .mt10 { margin-top: 10px!important; }
 .mt15 { margin-top: 15px!important; }
-.mt20 { margin-top: 20px!important; }
 .mt30 { margin-top: 30px!important; }
 .mt50 { margin-top: 50px!important; }
 .mt75 { margin-top: 75px!important; }
@@ -82,6 +92,7 @@ a:hover{color:#c81623;}
 .mr30 { margin-right: 30px!important; }
 .mr50 { margin-right: 50px!important; }
 .mr80 { margin-right: 80px!important; }
+
 .mb10 { margin-bottom: 10px!important; }
 .mb15 { margin-bottom: 15px!important; }
 .mb20 { margin-bottom: 20px!important; }
@@ -89,7 +100,6 @@ a:hover{color:#c81623;}
 .mb40 { margin-bottom: 40px!important; }
 .mb50 { margin-bottom: 50px!important; }
 .mb80 { margin-bottom: 80px!important; }
-.ml5 { margin-left: 5px!important; }
 .ml10 { margin-left: 10px!important; }
 .ml15 { margin-left: 15px!important; }
 .ml20 { margin-left: 20px!important; }
@@ -103,11 +113,7 @@ a:hover{color:#c81623;}
 .ptd10{ padding: 10px auto 0;     }
 .ptd20{ padding: 20px auto 0;     }
 .ptd30{ padding: 30px auto 0;     }
-.pt5 { padding-top: 5px!important;   }
-.pt10 { padding-top: 10px!important;   }
-.pt15 { padding-top: 15px!important;   }
-.pt20 { padding-top: 20px!important;   }
-.pt25 { padding-top: 25px!important; }
+.pt10 { padding-top: 10!important;   }
 .pt30 { padding-top: 30px!important; }
 .pt50 { padding-top: 50px!important; }
 .pt100{ padding-top: 100px!important;}
@@ -116,7 +122,6 @@ a:hover{color:#c81623;}
 .pr15 { padding-right: 15px!important; }
 .pr20 { padding-right: 20px!important; }
 .pb10 { padding-bottom: 10!important;  }
-.pb5 { padding-bottom: 5px!important; }
 .pb15 { padding-bottom: 20px!important; }
 .pb20 { padding-bottom: 20px!important; }
 .pb25 { padding-bottom: 25px!important; }
@@ -126,7 +131,6 @@ a:hover{color:#c81623;}
 .pb80 { padding-bottom: 80px!important; }
 .pb100{ padding-bottom: 100px!important;}
 .pl0  { padding-left: 0px!important;  }
-.pl5 { padding-left: 5px!important; }
 .pl10 { padding-left: 10px!important; }
 .pl15 { padding-left: 15px!important; }
 .pl20 { padding-left: 20px!important; }
